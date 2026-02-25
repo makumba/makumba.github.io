@@ -1,0 +1,434 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Add Form Tag
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/AddFormTag?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="AddFormTag" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_qf4777c5d.jsp" rel="alternate" title="RSS wiki feed for page Makumba: AddFormTag." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item" href="/page/Usage">usage</a>
+<a class="menu_item active" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<ul class="MenuTreeRoot">
+<a href="/page/DataDefinitions"><li class="MenuTreeLeaf">data definitions</li></a>
+<a href="/page/ValidationRules"><li class="MenuTreeLeaf">validation rules</li></a>
+<a href="/page/QueryLanguages"><li class="MenuTreeLeaf">query languages</li></a>
+<a href="/page/QueryFragments"><li class="MenuTreeLeaf">query fragments</li></a>
+<a href="/page/Taglib"><li class="MenuTreeExpanded">JSP tag library</li></a>
+<ul class="MenuTree">
+<a href="/page/ActionTag"><li class="MenuTreeLeaf">mak:action</li></a>
+<a class="MenuTreeSelected" href="/page/AddFormTag"><li class="MenuTreeLeafSelected">mak:addForm</li></a>
+<a href="/page/AttributeTag"><li class="MenuTreeLeaf">mak:attribute</li></a>
+<a href="/page/CriterionTag"><li class="MenuTreeLeaf">mak:criterion</li></a>
+<a href="/page/DeleteTag"><li class="MenuTreeLeaf">mak:delete</li></a>
+<a href="/page/DeleteLinkTag"><li class="MenuTreeLeaf">mak:deleteLink</li></a>
+<a href="/page/EditFormTag"><li class="MenuTreeLeaf">mak:editForm</li></a>
+<a href="/page/FormTag"><li class="MenuTreeLeaf">mak:form</li></a>
+<a href="/page/IfTag"><li class="MenuTreeLeaf">mak:if</li></a>
+<a href="/page/InfoTag"><li class="MenuTreeLeaf">mak:info</li></a>
+<a href="/page/InputTag"><li class="MenuTreeLeaf">mak:input</li></a>
+<a href="/page/ListTag"><li class="MenuTreeLeaf">mak:list</li></a>
+<a href="/page/LoginTag"><li class="MenuTreeLeaf">mak:login</li></a>
+<a href="/page/LogoutTag"><li class="MenuTreeLeaf">mak:logout</li></a>
+<a href="/page/MatchModeTag"><li class="MenuTreeLeaf">mak:matchMode</li></a>
+<a href="/page/NewFormTag"><li class="MenuTreeLeaf">mak:newForm</li></a>
+<a href="/page/ObjectTag"><li class="MenuTreeLeaf">mak:object</li></a>
+<a href="/page/OptionTag"><li class="MenuTreeLeaf">mak:option</li></a>
+<a href="/page/PaginationTag"><li class="MenuTreeLeaf">mak:pagination</li></a>
+<a href="/page/ResponseTag"><li class="MenuTreeLeaf">mak:response</li></a>
+<a href="/page/ResultListTag"><li class="MenuTreeLeaf">mak:resultList</li></a>
+<a href="/page/SearchFieldTag"><li class="MenuTreeLeaf">mak:searchField</li></a>
+<a href="/page/SearchFormTag"><li class="MenuTreeLeaf">mak:searchForm</li></a>
+<a href="/page/SectionTag"><li class="MenuTreeLeaf">mak:section</li></a>
+<a href="/page/SubmitTag"><li class="MenuTreeLeaf">mak:submit</li></a>
+<a href="/page/ValueTag"><li class="MenuTreeLeaf">mak:value</li></a>
+<a href="/page/VersionTag"><li class="MenuTreeLeaf">mak:version</li></a>
+<a href="/page/CountFunction"><li class="MenuTreeLeaf">mak:count()</li></a>
+<a href="/page/HasValueChangedFunction"><li class="MenuTreeLeaf">mak:hasValueChanged()</li></a>
+<a href="/page/LastCountFunction"><li class="MenuTreeLeaf">mak:lastCount()</li></a>
+<a href="/page/LastCountByIdFunction"><li class="MenuTreeLeaf">mak:lastCountById()</li></a>
+<a href="/page/MaxCountFunction"><li class="MenuTreeLeaf">mak:maxCount()</li></a>
+<a href="/page/MaxResultsFunction"><li class="MenuTreeLeaf">mak:maxResults()</li></a>
+<a href="/page/NextCountFunction"><li class="MenuTreeLeaf">mak:nextCount()</li></a>
+<a href="/page/NextCountByIdFunction"><li class="MenuTreeLeaf">mak:nextCountById()</li></a>
+<a href="/page/ValueFunction"><li class="MenuTreeLeaf">mak:value()</li></a>
+<a href="/page/WillValueChangeFunction"><li class="MenuTreeLeaf">mak:willValueChange()</li></a>
+</ul>
+<a href="/page/RequestLifecycle"><li class="MenuTree">makumba request lifecycle</li></a>
+<a href="/api/org/makumba/package-summary.html"><li class="MenuTreeLeaf">API Documentation</li></a>
+<a href="/page/DeveloperDocumentation"><li class="MenuTree">developer documentation</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><span style="display:none"> makumba hackers: this page is generated, don't edit it! Instead edit the text in the included pages. </span>
+</p><h2 id="section-AddFormTag-TaglibDocumentationForTagMakAddForm">Taglib documentation for tag mak:addForm<a class="hashlink" href="#section-AddFormTag-TaglibDocumentationForTagMakAddForm">#</a></h2>
+<h3 id="section-AddFormTag-Description">Description<a class="hashlink" href="#section-AddFormTag-Description">#</a></h3>
+<p><div style="display: inline;">Makes a form for creating a sub-object of the mandatory enclosing &lt;mak:object&gt; $ rt ; e.g. a language of a student , an address for a person
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</p>
+<h3 id="section-AddFormTag-Attributes">Attributes<a class="hashlink" href="#section-AddFormTag-Attributes">#</a></h3>
+<table border="1" class="wikitable">
+<tr>
+<th>Name</th>
+<th>Required</th>
+<th>Runtime expression</th>
+<th>Description</th>
+<th>Comments </th>
+</tr>
+<tr>
+<td>object</td>
+<td>true</td>
+<td>false</td>
+<td><div style="display: inline;">The label of the object whose sub-object will be created
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Mandatory
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>field</td>
+<td>true</td>
+<td>false</td>
+<td><div style="display: inline;">The field name that denotes the sub-object.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Mandatory
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>action<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">the response page of the form
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Mandatory if a &lt;mak:action&gt; is absent
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>method<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">the HTTP method (get or post)
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Defaults to <span class="code">get </span>
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>name<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">the name of the form
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Optional name of the form, used to identify it by other makumba tags
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>message<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">the message that is displayed in the response page upon success
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Defaults to "changes done".
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>annotation<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Indicates whether validation errors should be shown in the form, or be displayed in the &lt;mak:response/&gt;.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Taken into account only if reloadFormOnError is not set to false. Values are none (displayed in &lt;mak:response/&gt;), before (before the input), after (after the input) or both (displayed both before and after the input). Defaults to none.
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>annotationSeparator<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Prints the given separator between the annotation and the input field.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Also HTML can be used, e.g. printing an error icon.
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>reloadFormOnError<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Indicates whether the form page shall be reloaded on an error, or the specified form action page will be loaded directly.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Values are true or false; defaults to false.
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>clientSideValidation<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Controls whether client side validation shall be used.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Values are false (off), true (on submission) or live (while tpying).
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>multipleSubmitErrorMsg<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Enables multiple form submission prevention, and sets the given value as the error message.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;"><p></p></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>target<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td rowspan="3"><div style="display: inline;">Form-specific HTML tag attribute
+</div> (generic)</td>
+<td rowspan="3"><div style="display: inline;">The content is copied to the resulting &lt;form...&gt; tag. Careful with (escaping) quotes.
+</div> (generic) 
+</td>
+</tr>
+<tr>
+<td>onReset<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onSubmit<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>styleClass<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Generic HTML tag attribute
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">results in class="..."
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>style<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td rowspan="12"><div style="display: inline;">Generic HTML tag attribute
+</div> (generic)</td>
+<td rowspan="12"><div style="display: inline;">The content is copied to the resulting html tag. Careful with (escaping) quotes.
+</div> (generic) 
+</td>
+</tr>
+<tr>
+<td>title<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onClick<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onDblClick<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onKeyDown<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onKeyUp<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onKeyPress<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseDown<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseUp<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseMove<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseOut<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseOver<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+</table>
+<h3 id="section-AddFormTag-SeeAlso">See also<a class="hashlink" href="#section-AddFormTag-SeeAlso">#</a></h3>
+<p><a class="wikipage" href="/page/InputTag">mak:input</a>, <a class="wikipage" href="/page/FormTag">mak:form</a>, <a class="wikipage" href="/page/NewFormTag">mak:newForm</a>, <a class="wikipage" href="/page/EditFormTag">mak:editForm</a>, <a class="wikipage" href="/page/DeleteLinkTag">mak:deleteLink</a>, <a class="wikipage" href="/page/DeleteTag">mak:delete</a>
+<h3 id="section-AddFormTag-Examples">Examples<a class="hashlink" href="#section-AddFormTag-Examples">#</a></h3>
+</p>
+<p><div style="display: inline;"><div class="prettify">
+<pre>
+&lt;mak:object from="company.Employee e" where="e=$employee"&gt;
+    &lt;mak:addForm object="e" field="projects" action="employeeView.jsp" method="post"&gt;
+        &lt;mak:value expr="e.name"/&gt;
+        &lt;mak:input name="project"/&gt;
+        &lt;mak:input name="timePercentage"/&gt;
+    &lt;/mak:addForm&gt;
+&lt;/mak:object&gt;
+</pre></div>
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</p>
+<p></p>
+<span style="display:none;"> <a class="wikipage" href="/page/CategoryDocumentation">Category Documentation</a></span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on August 1 2010
+      
+    
+
+   <a class="feed" href="/rss_qf4777c5d.jsp" title="RSS feed for page AddFormTag"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

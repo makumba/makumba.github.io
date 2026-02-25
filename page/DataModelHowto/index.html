@@ -1,0 +1,400 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Data Model Howto
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/DataModelHowto?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="DataModelHowto" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_q5c56b484.jsp" rel="alternate" title="RSS wiki feed for page Makumba: DataModelHowto." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item active" href="/page/Usage">usage</a>
+<a class="menu_item" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<ul class="MenuTreeRoot">
+<a href="/page/MakumbaManifesto"><li class="MenuTreeLeaf">makumba manifesto</li></a>
+<a class="MenuTreeSelected" href="/page/DataModelHowto"><li class="MenuTreeLeafSelected">defining the data model</li></a>
+<a href="/page/DisplayingDataHowto"><li class="MenuTreeLeaf">displaying data</li></a>
+<a href="/page/CreatingEditingHowto"><li class="MenuTreeLeaf">creating and editing data</li></a>
+<a href="/page/MultipleListsAndFormsHowto"><li class="MenuTreeLeaf">multiple lists and forms</li></a>
+<a href="/page/MakumbaAPIHowto"><li class="MenuTreeLeaf">makumba API</li></a>
+<a href="/page/Web20HowTo"><li class="MenuTreeLeaf">web 2.0 features</li></a>
+<a href="/page/AdvancedFeaturesHowto"><li class="MenuTreeLeaf">advanced features</li></a>
+<a href="/page/SearchFormsHowto"><li class="MenuTreeLeaf">search forms</li></a>
+<a href="/page/MDDFunctionsHowto"><li class="MenuTreeLeaf">MDD functions</li></a>
+<a href="/page/AuthenticationAuthorizationHowto"><li class="MenuTreeLeaf">access control</li></a>
+<a href="/page/LayoutHowto"><li class="MenuTreeLeaf">layout &amp; navigation</li></a>
+<a href="/page/DeveloperToolsHowTo"><li class="MenuTreeLeaf">developer tools</li></a>
+<a href="/page/Plugin"><li class="MenuTreeLeaf">eclipse plugin</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><div class="toc">
+<div class="collapsebox">
+<h4 id="section-TOC">Table of Contents</h4>
+<ul>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataModelHowto#section-DataModelHowto-GeneralPrinciples">General principles</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DataModelHowto#section-DataModelHowto-FieldDefinitions">Field definitions</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataModelHowto#section-DataModelHowto-PrimitiveTypes">Primitive types</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataModelHowto#section-DataModelHowto-RelationalTypesAndCollections">Relational types and collections</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DataModelHowto#section-DataModelHowto-ValidationRules">Validation rules</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DataModelHowto#section-DataModelHowto-MDDFunctions">MDD functions</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DataModelHowto#section-DataModelHowto-InteractionWithTheDatabaseSchema">Interaction with the database schema</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataModelHowto#section-DataModelHowto-MakumbaTableAndFieldNames">Makumba table and field names</a></li>
+</ul>
+</div>
+</div>
+<br/>
+</p><p>Makumba uses so-called Makumba Data Definitions (MDDs) in order to represent objects. These definitions are also referred to as type of an object. This section provides a short overview of MDDs and illustrates them with some examples, check the reference documentation for more details on MDDs.
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>This documentation does not give any guidelines regarding data model design. We assume that you already has some knowledge of general data model design concepts.
+</p></div></div>
+</p>
+<h2 id="section-DataModelHowto-GeneralPrinciples">General principles<a class="hashlink" href="#section-DataModelHowto-GeneralPrinciples">#</a></h2>
+<p>MDDs are stored as files that are located in the WEB-INF/classes/dataDefinitions folder of your webapp. Their file extensions are .mdd and the resulting Makumba type name is using the same naming principle of Java packages, i.e. the MDD stored in WEB-INF/classes/dataDefinitions/company/Employee.mdd will have as type name company.Employee.
+</p>
+<p>MDDs contain following elements:
+</p>
+<ul><li>the field definitions
+</li><li>validation rules referring to one or more fields
+</li><li>MDD functions
+</li></ul><p>We will further explain those type of fields by using the following example of a company that has employees, each working in a department and assigned to several projects:
+</p>
+<p><table border="0" class="imageplugin" style="margin-left: auto; margin-right: auto;">
+<tr><td><img src="/attach/DataModelHowto/example-eer.png"/></td></tr>
+</table>
+</p>
+<p>Let's take a look at the Makumba Data Definitions that fit this example:
+</p>
+<p><b>company.Company (company/Company.mdd)</b>
+</p>
+<div class="prettify">
+<pre>
+name = char[50]
+turnover = real
+suppliers = set company.Company
+targetMarkets = set general.Country
+logo = file
+</pre></div>
+<p><b>company.Department (company/Department.mdd)</b>
+</p>
+<div class="prettify">
+<pre>
+name = char[50]
+company = ptr company.Company
+manager = ptr company.Employee
+</pre></div>
+<p><b>company.Employee (company/Employee.mdd)</b>
+</p>
+<div class="prettify">
+<pre>
+name = char[200]
+surname = char[200]
+gender = int{"Male" = 10, "Female" = 20}
+birthdate = date
+salary = real
+department = ptr company.Department
+
+projects = set
+projects-&gt;project = ptr company.Project
+projects-&gt;timePercentage = int ;percentage assigned
+</pre></div>
+<p><b>company.Project (company/Project.mdd)</b>
+</p>
+<div class="prettify">
+<pre>
+name = char[255]
+leader = ptr company.Employee
+description = text
+</pre></div>
+<h3 id="section-DataModelHowto-FieldDefinitions">Field definitions<a class="hashlink" href="#section-DataModelHowto-FieldDefinitions">#</a></h3>
+This section gives a short overview of the different types of field types that exist in Makumba:
+<h4 id="section-DataModelHowto-PrimitiveTypes">Primitive types<a class="hashlink" href="#section-DataModelHowto-PrimitiveTypes">#</a></h4>
+<table border="1" class="wikitable">
+<tr>
+<th> Field definition type</th>
+<th> Description</th>
+<th> Default edit user interface
+</th>
+</tr>
+<tr>
+<td> int</td>
+<td> a simple integer </td>
+<td> text field
+</td>
+</tr>
+<tr>
+<td> int{} </td>
+<td> Integer enumeration, allowing for a set of predefined values </td>
+<td> dropdown choice or radio button
+</td>
+</tr>
+<tr>
+<td> real </td>
+<td> a real number </td>
+<td> text field 
+</td>
+</tr>
+<tr>
+<td> date </td>
+<td> a date </td>
+<td> date 
+</td>
+</tr>
+<tr>
+<td> char<u></u> </td>
+<td> a limited text (maximum length is 255) </td>
+<td> text field 
+</td>
+</tr>
+<tr>
+<td> text </td>
+<td> an unlimited text </td>
+<td> text area
+</td>
+</tr>
+<tr>
+<td> binary </td>
+<td> a binary content, e.g. an image </td>
+<td> binary area
+</td>
+</tr>
+<tr>
+<td> file </td>
+<td> a file including its meta-data (content type, size, ...) </td>
+<td> file upload 
+</td>
+</tr>
+</table>
+<h4 id="section-DataModelHowto-RelationalTypesAndCollections">Relational types and collections<a class="hashlink" href="#section-DataModelHowto-RelationalTypesAndCollections">#</a></h4>
+<table border="1" class="wikitable">
+<tr>
+<th> Field definition type </th>
+<th> Description </th>
+<th> Default edit user interface
+</th>
+</tr>
+<tr>
+<td> ptr </td>
+<td> a pointer to another type record </td>
+<td> dropdown select of record titles.
+</td>
+</tr>
+<tr>
+<td> set </td>
+<td> a set of records of another type (which could be re-used in another type) TODO: set chooser link </td>
+<td> multiple choice of record titles. 
+</td>
+</tr>
+<tr>
+<td> fieldName=set<br/>
+fieldName-&gt; ... </td>
+<td> an internal set that relates to one specific record </td>
+<td> multiple choice of record titles
+</td>
+</tr>
+<tr>
+<td> set int{}</td>
+<td> a set of predefined values </td>
+<td> multiple choice from values 
+</td>
+</tr>
+</table>
+<h3 id="section-DataModelHowto-ValidationRules">Validation rules<a class="hashlink" href="#section-DataModelHowto-ValidationRules">#</a></h3>
+<p>Validation rules make it possible to automatically ensure the validity of the data entered by the user in forms. These rules take place at the client level (if client-side validation is enabled) and at the server level.
+</p>
+<p>If we wanted to ensure that employees have to be at least 16 years old, we could add the following line to the <span class="Code">company.Employee</span> MDD:
+</p>
+<div class="prettify">
+<pre>
+compare(birthdate) {birthdate &lt;= date($now, $now, $now - 16)} : An employee has to be at least 16 years old!
+</pre></div>
+<p>Additionally to these explicit validation rules, the type of a field and/or the field attributes generate automatic checks that reflect on validation. For example <span class="Code">name = not null char<a class="footnoteref" href="#ref-DataModelHowto-255">[255]</a></span> will lead to a client and server-side check that makes sure this field is not empty, and <span class="Code">salary=real</span> will trigger a check for the input actually containing a number.
+</p>
+<p>For a complete list of these implicit rules, please refer to the <a class="wikipage" href="/page/ValidationRules#section-ValidationRules-ImplicitValidationRules">reference documentation on validation rules</a>.
+<h3 id="section-DataModelHowto-MDDFunctions">MDD functions<a class="hashlink" href="#section-DataModelHowto-MDDFunctions">#</a></h3>
+<a class="wikipage" href="/page/QueryFragments#section-QueryFragments-MDDFunctions">MDD functions</a> are functions defined in a <a class="wikipage" href="/page/DataDefinitions">Makumba Data Definition</a> and can be used in all kind of Makumba queries (in business logic, on the JSP level or in other functions).
+</p>
+<p>If we want to often print the name and surname of one employee, we can define the following function in company.Employee:
+</p>
+<div class="prettify">
+<pre>
+nameSurname() { concat(name, ' ', surname }
+</pre></div>
+<p>You can read more about MDD functions in the reference documentation or in the MDD function usage documentation.
+</p>
+<h3 id="section-DataModelHowto-InteractionWithTheDatabaseSchema">Interaction with the database schema<a class="hashlink" href="#section-DataModelHowto-InteractionWithTheDatabaseSchema">#</a></h3>
+<p>One powerful feature of Makumba is that it takes care of the interaction with the database. This means that once you correctly configured the database, Makumba will create and maintain the table structure for you, as well as indexes and foreign keys.
+Allowing the alteration of specific types
+</p>
+<p>In order to allow Makumba to create the necessary tables related to a type, it is necessary to declare this in the <a class="wikipage" href="/page/MakumbaConfiguration#section-MakumbaConfiguration-DatabaseConfiguration">data source configuration</a> in <a class="wikipage" href="/page/MakumbaConfiguration">Makumba.conf</a>.
+</p>
+<p>When using the Makumba database layer, this is done by using the <span class="Code">alter#typeName=tue/false</span> parameter in the data source section it should apply to (it may be that you don't want to allow schema update in your production environment whilst it's not a problem in a test environment).
+</p>
+<div class="prettify">
+<pre>
+alter#company.Employee=true
+</pre></div>
+<p>will allow Makumba to alter the table structure of the company.Employee type.
+</p>
+<div class="prettify">
+<pre>
+alter#=true
+</pre></div>
+<p>will allow Makumba to alter all the types in the database.
+</p>
+<p><div class="note warning"><div class="label">Warning</div><div class="content"><p>Make sure you allow Makumba to modify a type after creating or updating it, or these changes won't reflect in the database and you will get an error.
+</p></div></div>
+</p>
+<p></p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>Changes in the MDD structure require a webapp restart in order to reflect in the database.
+</p></div></div>
+</p>
+<p>When using the Hibernate database layer, the parameter makumba.schemaUpdate=true|false has to be used in order to allow the database layer to alter the database schema.
+</p>
+<h4 id="section-DataModelHowto-MakumbaTableAndFieldNames">Makumba table and field names<a class="hashlink" href="#section-DataModelHowto-MakumbaTableAndFieldNames">#</a></h4>
+<p>Makumba generates table and field names in a specific manner:
+</p>
+<ul><li>company.Employee will be kept in the table company_Employee_
+</li><li>the primitive field company.Employee#name will be called name_ in the database
+</li><li>the internal set company.Employee#projects will be hold in the table company_Employee__projects_
+</li><li>the external set company.Company#suppliers will be hold in the table company_Company_ (since it is a set of companies) and the intermediary table general_Company__suppliers_ will hold the references to its members
+</li></ul><p>This mechanism can be modified to some extent by using a number of parameters in the data source configuration in Makumba.conf:
+</p>
+<ul><li>company.Company = company means that Makumba will look for the type company.Company in the database table company instead of company_Company_
+</li><li>company.Company-&gt;name = companyName means that Makumba will look for the field name in the database field companyName instead of name_
+</li><li>the parameter addUnderscore=true|false makes it possible to control whether underscores are appended to the database name of tables and fields
+</li></ul><p></p>
+<span style="display:none;"><a class="wikipage" href="/page/CategoryUsage">Category Usage</a></span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on May 16 2010
+      
+    
+
+   <a class="feed" href="/rss_q5c56b484.jsp" title="RSS feed for page DataModelHowto"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

@@ -1,0 +1,448 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>
+    Makumba: Search
+  </title>
+  
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" media="screen, projection, print" type="text/css"
+     href="/templates/makumba/jspwiki.css"/>
+
+<link rel="stylesheet" type="text/css" media="print" 
+     href="/templates/makumba/jspwiki_print.css" />
+<!-- INCLUDERESOURCES (stylesheet) -->
+
+<!-- INCLUDERESOURCES (inlinecss) -->
+
+
+
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+
+
+<script type="text/javascript" src="/scripts/mootools.js"></script>
+<script type="text/javascript" src="/scripts/prettify.js"></script>
+<script type="text/javascript" src="/scripts/jspwiki-common.js"></script>
+<script type="text/javascript" src="/scripts/jspwiki-commonstyles.js"></script>
+<!-- INCLUDERESOURCES (script) -->
+
+
+
+
+
+<meta name="wikiContext" content='find' />
+<meta name="wikiBaseUrl" content='http://www.makumba.org/' />
+<meta name="wikiPageUrl" content='/page/%23%24%25' />
+<meta name="wikiEditUrl" content='/page/Main?do=Edit' />
+<meta name="wikiJsonUrl" content='/JSON-RPC' />
+<meta name="wikiPageName" content='Main' />
+<meta name="wikiUserName" content='127.0.0.1' />
+<meta name="wikiTemplateUrl" content='/templates/makumba/' />
+<meta name="wikiApplicationName" content='Makumba' />
+
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="search" href="/page/FindPage"
+    title='Search Makumba' />
+<link rel="help"   href="/page/TextFormattingRules"
+    title="Help" />
+
+ <link rel="start"  href="/page/Main"
+    title="Front page" />
+<link rel="alternate stylesheet" type="text/css" href="/templates/makumba/jspwiki_print.css"
+    title="Print friendly" />
+<link rel="alternate stylesheet" type="text/css" href="/templates/makumba/jspwiki.css"
+    title="Standard" />
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS wiki feed for the entire site." href="http://www.makumba.org/rss.rdf" />
+<link rel="alternate" type="application/rss+xml" title="RSS wiki feed for page Makumba: Main." href="http://www.makumba.org/rss.jsp?page=Main&amp;mode=wiki" />
+
+
+
+
+
+
+
+  
+  
+  
+    <meta name="robots" content="noindex,follow" />
+  
+</head>
+
+<body class="view">
+
+<div id="wikibody" class="fav-left">
+ 
+  
+
+
+
+
+
+
+
+
+
+<div id="site">
+  <div id="header">
+    <div id="persistent">
+      
+
+
+
+
+
+
+  
+  
+  
+    
+      <a href="/Login.jsp?redirect=Search" 
+        title="Log in or Register as new user">Log in</a>
+    
+  
+  
+  
+  
+
+
+
+      
+
+
+
+
+
+
+<form action="/Search.jsp"
+           accept-charset="UTF-8">
+
+  <input id="searchbox" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; "
+        onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; "
+           type="text" value="search"
+           name="query" id="query"
+      accesskey="f" />
+</form>
+
+    </div>
+    <div id="top_nav">
+    
+      <a href="/page/Main"          class="menu_item active">home</a>
+      <a href="/page/QuickStart"    class="menu_item">quick start</a>
+      <a href="/page/Configuration" class="menu_item">configuration</a>
+      <a href="/page/Usage"         class="menu_item">usage</a>
+      <a href="/page/Documentation" class="menu_item">documentation</a>
+      <a href="/page/Showcase"      class="menu_item">showcase</a>
+      <a href="/page/Download"      class="menu_item">download</a>
+    </div>
+  </div>
+  
+  
+  <div id="sidemenu">
+     <h1><a class="wikipage" href="/page/Main">home</a></h1>
+<ul class="MenuTreeRoot">
+<a href="http://www.makumba.org/page/Blog"><li class="MenuTreeLeaf">blog</li></a>
+<a href="http://www.makumba.org/page/MakumbaManifesto"><li class="MenuTreeLeaf">manifesto</li></a>
+<a href="http://www.makumba.org/page/GettingHelp"><li class="MenuTreeLeaf">getting help</li></a>
+<a href="http://www.makumba.org/page/Supporters"><li class="MenuTreeLeaf">supporters</li></a>
+<a href="http://www.makumba.org/page/About"><li class="MenuTreeLeaf">about</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+
+
+  </div>
+  
+
+
+
+
+
+
+
+  <div id="content" class="sideMenu">
+
+    <div id="page">
+      
+
+
+
+
+
+      
+  
+
+      
+
+
+
+
+
+
+
+
+
+
+
+<div class="tabmenu">
+
+
+
+
+
+
+
+<a class="activetab" id="menu-findcontent" accesskey="s" ><span class='accesskey'>S</span>earch Wiki</a>
+
+
+<a id="menu-findhelp" accesskey="h" ><span class='accesskey'>H</span>elp</a>
+
+
+</div>
+<div class="tabs">
+<div id="findcontent" >
+
+
+<form action="/Search.jsp"
+       class="wikiform"
+          id="searchform2"
+         accept-charset="UTF-8">
+
+  <h4>Enter your query here:</h4>
+  <p>
+    <input type="text"
+           name="query" id="query2" 
+          value="" 
+           size="32" />
+
+    <input type="checkbox" name="details" id="details"  />
+    Show details
+
+    <select name="scope" id="scope" > 
+      <option value="" selected="selected" >Search Everywhere</option>
+      <option value="author:"  >Authors</option>
+      <option value="name:"  >Page Names</option>
+      <option value="contents:"  >Page Content</option>
+      <option value="attachment:"  >Attachments</option>       
+    </select>
+
+	<input type="submit" name="ok" id="ok" value="Find!" />
+	<input type="submit" name="go" id="go" value="Go!" />
+    <input type="hidden" name="start" id="start" value="0" />
+    <input type="hidden" name="maxitems" id="maxitems" value="20" />
+
+    <span id="spin" class="spin" style="position:absolute;display:none;"></span>
+  </p>
+</form>
+
+<div id="searchResult2" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+<div id="findhelp" class="hidetab" >
+
+  <p>This page gives a quick overview of the search engine query syntax.  
+This page is called <a class="wikipage" href="/page/SearchPageHelp">Search Page Help</a>.
+</p><p>Use '+' to require a word, '-' to forbid a word.  For example:
+</p>
+<pre>
+          +java -emacs jsp
+</pre>
+<p>finds pages that MUST include the word &quot;java&quot;, and MAY NOT include
+the word &quot;emacs&quot;.  Also, pages that contain the word &quot;jsp&quot; are
+ranked before the pages that don't.
+</p>
+<p>All searches are case insensitive.  If a page contains both
+forbidden and required keywords, it is not shown.
+</p>
+<h3 id="section-Main-QuerySyntaxTable"> Query syntax table<a class="hashlink" href="#section-Main-QuerySyntaxTable">#</a></h3>
+<p>For more info look at <span class="slimbox"><a class="external" href="http://lucene.apache.org/java/docs/queryparsersyntax.html">Lucene's query syntax</a><img class="outlink" src="/images/out.png" alt="" /></span>.
+</p>
+<p />
+<table class="wikitable" border="1"><tr class="odd"><th> term  </th><td> find a single Term is easy   </td><td> <tt>hello</tt></td></tr>
+<tr><th> &quot;...&quot; </th><td> find a group of words </td><td> <tt>&quot;hello dolly&quot;</tt></td></tr>
+<tr class="odd"><th> ?     </th><td> any single character (the ? can not be the 1st character of a search) </td><td> <tt>te?t</tt></td></tr>
+<tr><th> *     </th><td> any multiple character (the * can not be the 1st character of a search) </td><td> <tt>test*</tt></td></tr>
+<tr class="odd"><th> OR    </th><td> match document if either of the terms exist </td><td> <tt>&quot;hello dolly&quot; hello</tt><br /><tt>&quot;hello dolly&quot; OR hello</tt></td></tr>
+<tr><th> AND   </th><td> match documents where both terms exists </td><td> <tt>&quot;hello dolly&quot; AND &quot;dolly lucy&quot;</tt></td></tr>
+<tr class="odd"><th> +     </th><td> requires that the term after the &quot;+&quot; symbol exist </td><td> <tt>+hello dolly</tt></td></tr>
+<tr><th> -<br />NOT </th><td> exclude documents that contain the term after the &quot;-&quot; symbol <br /> exclude also supported with NOT or ! </td><td> <tt>&quot;hello dolly&quot; -&quot;dolly lucy&quot;</tt><br /><tt>&quot;hello dolly&quot; NOT &quot;dolly lucy&quot;</tt></td></tr>
+<tr class="odd"><th> (...) </th><td> use parentheses to form sub queries </td><td> <tt>(hello OR dolly) AND website</tt></td></tr>
+<tr><th> ~    </th><td> <i>fuzzy</i> searchs to match terms similar in spelling </td><td> <tt>roam</tt></td></tr>
+<tr class="odd"><th> ~n    </th><td> <i>proximity</i> search, within a distance expressed in number of words </td><td> <tt>&quot;hello dolly&quot;~10</tt></td></tr>
+<tr><th> ^n    </th><td> <i>boost</i> factor to increase importance in a search </td><td> <tt>&quot;hello dolly&quot;^4 &quot;dolly lucy&quot;</tt></td></tr>
+<tr class="odd"><th> \     </th><td> escape special characters: <b> + - &amp;&amp; || ! ( ) { } [ ] ^ &quot; * ? : \ </b> </td><td> <tt>\(1\+1\)\:2</tt> to find (1+1):2</td></tr>
+</table><p>You can restrict the search domain by prefixing your query:
+</p>
+<table class="wikitable" border="1"><tr class="odd"><th> author:<i>term</i>     </th><td> find pages modified by certain author(s) </td><td> <tt>author:~JohnFoo</tt></td></tr>
+<tr><th> attachment:<i>term</i> </th><td> find pages with certain attachment name  </td><td> <tt>attachment:brushed*</tt></td></tr>
+<tr class="odd"><th> name:<i>term</i>       </th><td> find pages with certain page name        </td><td> <tt>name:Main</tt></td></tr>
+<tr><th> content:<i>term</i>     </th><td> find pages with certain content          </td><td> <tt>content:jspwiki</tt></td></tr></table>
+</div>
+
+
+
+<div style="clear:both;" ></div>
+</div>
+
+      
+
+
+
+
+
+
+
+    </div>
+
+    
+
+
+
+
+
+
+ 
+  
+  
+
+  
+
+  
+  
+  <span class="rssfeed">
+    <a class="feed" href="http://www.makumba.org/rss.rdf">&nbsp;</a>
+  </span>
+  </div>  
+  
+</div>
+
+
+	<div class="clearbox"></div>
+  </div>
+
+  
+
+
+
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</div>
+
+</body>
+</html>
+

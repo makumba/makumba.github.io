@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:wiki='http://purl.org/rss/1.0/modules/wiki/' xmlns='http://purl.org/rss/1.0/' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+<channel rdf:about='http://www.makumba.org/'><link>http://www.makumba.org/</link><title>Makumba</title><description>makumba RSS feed</description><dc:language>en-us</dc:language><items><rdf:Seq><rdf:li rdf:resource='http://www.makumba.org/page/OptionTagAttributeValueAttributeComments'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/QueryLanguages'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/SectionTag'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeComments'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeDescription'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/QueryFragments'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/TagIndex'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/CategoryDocumentationMenu'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/UTF8Configuration'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/MatchModeTagExample'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/Blog'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/Plugin'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/MakumbaManifesto'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/Main'></rdf:li><rdf:li rdf:resource='http://www.makumba.org/page/Supporters'></rdf:li></rdf:Seq></items></channel>
+<item rdf:about='http://www.makumba.org/page/OptionTagAttributeValueAttributeComments'><title>OptionTagAttributeValueAttributeComments</title><link>http://www.makumba.org/page/OptionTagAttributeValueAttributeComments</link><description>Cristian Bogdan changed this page on Tue Apr 05 00:39:06 CEST 2016:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 1 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;If not indicated, nil (null option) is default&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;If not indicated, nil (null option) is default. null option can be also marked as &amp;quot;nil&amp;quot; or &amp;quot;&amp;quot; (except for char types, where it is a valid option)&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>3</wiki:version><wiki:diff>http://www.makumba.org/page/OptionTagAttributeValueAttributeComments?do=Diff&amp;r1=-1</wiki:diff><dc:date>2016-04-04T22:39:06Z</dc:date><dc:creator>Cristian Bogdan</dc:creator><wiki:history>http://www.makumba.org/page/OptionTagAttributeValueAttributeComments?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/QueryLanguages'><title>QueryLanguages</title><link>http://www.makumba.org/page/QueryLanguages</link><description>Cristian Bogdan changed this page on Mon Apr 04 23:46:25 CEST 2016:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 78 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;Makumba automatically creates the SQL statements from the (Object) Query Languages MQL or HQL. Doing so, it converts elements such as %%prettify label.subTable %% to corresponding JOINs in SQL. Normally, Makumba will create default (inner) JOINs between tables. However, if the expression contains two or more &amp;quot;.&amp;quot;, then all but the last &amp;quot;.&amp;quot; will translate to a LEFT JOIN.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;Makumba automatically creates the SQL statements from the (Object) Query Languages MQL or HQL. Doing so, it converts elements such as %%prettify label.subTable %% to corresponding JOINs in SQL. Normally, Makumba will create default (inner) JOINs between tables. However, if the expression (label.pointerField.field) goes via a nullable pointerField, a LEFT JOIN is generated. This is the default behaviour, but can be suppressed by specifying the join type explicitly.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>7</wiki:version><wiki:diff>http://www.makumba.org/page/QueryLanguages?do=Diff&amp;r1=-1</wiki:diff><dc:date>2016-04-04T21:46:25Z</dc:date><dc:creator>Cristian Bogdan</dc:creator><wiki:history>http://www.makumba.org/page/QueryLanguages?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/SectionTag'><title>SectionTag</title><link>http://www.makumba.org/page/SectionTag</link><description>Cristian Bogdan changed this page on Mon Apr 04 23:38:59 CEST 2016:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 1 removed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 9 added 5 lines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;[{Box&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;Experimental. Not yet used in production environments.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;}]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>3</wiki:version><wiki:diff>http://www.makumba.org/page/SectionTag?do=Diff&amp;r1=-1</wiki:diff><dc:date>2016-04-04T21:38:59Z</dc:date><dc:creator>Cristian Bogdan</dc:creator><wiki:history>http://www.makumba.org/page/SectionTag?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeComments'><title>ListTagAttributeAuthorizeAttributeComments</title><link>http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeComments</link><description>Cristian Bogdan changed this page on Mon Apr 04 23:32:57 CEST 2016:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 1 added 2 lines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;Experimental. Not yet used in production environments.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>4</wiki:version><wiki:diff>http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeComments?do=Diff&amp;r1=-1</wiki:diff><dc:date>2016-04-04T21:32:57Z</dc:date><dc:creator>Cristian Bogdan</dc:creator><wiki:history>http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeComments?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeDescription'><title>ListTagAttributeAuthorizeAttributeDescription</title><link>http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeDescription</link><description>Cristian Bogdan changed this page on Mon Apr 04 23:29:57 CEST 2016:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 1 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;&amp;quot;binding&amp;quot; will require that the user has access (canRead() ) to all returned data. If that is not the case, an UnauthorizedException is raised.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;&amp;quot;binding&amp;quot; (or &amp;quot;auto&amp;quot;) requires that the user has access (canRead() ) to all returned data. If that is not the case, an UnauthorizedException is raised.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 3 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;&amp;quot;filter&amp;quot; will filter out the results for which canRead() is false.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;&amp;quot;filter&amp;quot; filters out the results for which canRead() is false.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>3</wiki:version><wiki:diff>http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeDescription?do=Diff&amp;r1=-1</wiki:diff><dc:date>2016-04-04T21:29:57Z</dc:date><dc:creator>Cristian Bogdan</dc:creator><wiki:history>http://www.makumba.org/page/ListTagAttributeAuthorizeAttributeDescription?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/QueryFragments'><title>QueryFragments</title><link>http://www.makumba.org/page/QueryFragments</link><description>Cristian Bogdan changed this page on Mon Apr 04 22:59:21 CEST 2016:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 167 removed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;[{Box&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 169 changed 2 lines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;(not yet implemented)&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;}]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;Implicit authorisation constraints are defined in functions like canRead(), canInsert(), canUpdate(), canDelete() in the respective MDDs. Only canRead() is honoured right now. These functions will be used whenever a [mak:list|ListTag], [mak:object|ObjectTag] or [mak:*Form|FormTag] attempts to view, create, change or delete an object of the respective type. The following features are partially implemented:&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 172 removed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;Implicit authorisation constraints are defined in functions like canRead(), canInsert(), canUpdate(), canDelete() in the respective MDDs. These functions will be used whenever a [mak:list|ListTag], [mak:object|ObjectTag] or [mak:*Form|FormTag] attempts to view, create, change or delete an object of the respective type. The following features are intended:&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 174 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;[{Box type='fixme' author='cristi'&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;* [filter out|bug:1059] from mak:list and mak:object objects that the user is not authorized to see, but do not r|aise any exception if there are such objects.This will probably be the default for [mak:list|ListTag]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 176 removed 2 lines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;[filter out|bug:1059] from mak:list and mak:object objects that the user is not authorized to see, but do not r|aise any exception if there are such objects.This will probably be the default for [mak:list|ListTag]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;}]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 179 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;[{Box type='fixme' author='cristi'&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;* [block access|bug:1061] to the whole page if the user is not authorized. This will probably be the default for [mak:object|ObjectTag], and [mak:*Form|FormTag]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 181 removed 2 lines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;[block access|bug:1061] to the whole page if the user is not authorized. This will probably be the default for [mak:object|ObjectTag], and [mak:*Form|FormTag]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;}]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 184 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;[{Box type='fixme' author='cristi'&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;* [not link|bug:1060] to a page that is not authorized&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 186 removed 3 lines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;[not link|bug:1060] to a page that is not authorized&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;}]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>3</wiki:version><wiki:diff>http://www.makumba.org/page/QueryFragments?do=Diff&amp;r1=-1</wiki:diff><dc:date>2016-04-04T20:59:21Z</dc:date><dc:creator>Cristian Bogdan</dc:creator><wiki:history>http://www.makumba.org/page/QueryFragments?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/TagIndex'><title>TagIndex</title><link>http://www.makumba.org/page/TagIndex</link><description>Manu changed this page on Mon Apr 04 18:35:10 CEST 2016:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;</description><wiki:version>2</wiki:version><wiki:diff>http://www.makumba.org/page/TagIndex?do=Diff&amp;r1=-1</wiki:diff><dc:date>2016-04-04T16:35:10Z</dc:date><dc:creator>Manu</dc:creator><wiki:history>http://www.makumba.org/page/TagIndex?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/CategoryDocumentationMenu'><title>CategoryDocumentationMenu</title><link>http://www.makumba.org/page/CategoryDocumentationMenu</link><description>Manu changed this page on Thu Mar 26 09:43:44 CET 2015:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 32 removed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;** [mak:section|SectionTag]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 34 added one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;** [mak:section|SectionTag]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 39 added one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;** [mak:hasValueChanged()|HasValueChangedFunction]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 41 added one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;** [mak:lastCountById()|LastCountByIdFunction]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 44 added 4 lines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;** [mak:nextCount()|NextCountFunction]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;** [mak:nextCountById()|NextCountByIdFunction]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;** [mak:value()|ValueFunction]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;** [mak:willValueChange()|WillValueChangeFunction]&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>14</wiki:version><wiki:diff>http://www.makumba.org/page/CategoryDocumentationMenu?do=Diff&amp;r1=-1</wiki:diff><dc:date>2015-03-26T08:43:44Z</dc:date><dc:creator>Manu</dc:creator><wiki:history>http://www.makumba.org/page/CategoryDocumentationMenu?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/UTF8Configuration'><title>UTF8Configuration</title><link>http://www.makumba.org/page/UTF8Configuration</link><description>Cristian Bogdan changed this page on Fri Mar 08 19:56:29 CET 2013:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 26 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;The filter must be used before any other filter.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;The filter must be used before any other filter. If a parameter is read before the request character encoding is set to utf8, the parameter encoding is compromised. For example CAS single-sign on breaks the encoding: [https://issues.jasig.org/browse/CASC-122]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 28 removed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>9</wiki:version><wiki:diff>http://www.makumba.org/page/UTF8Configuration?do=Diff&amp;r1=-1</wiki:diff><dc:date>2013-03-08T18:56:29Z</dc:date><dc:creator>Cristian Bogdan</dc:creator><wiki:history>http://www.makumba.org/page/UTF8Configuration?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/MatchModeTagExample'><title>MatchModeTagExample</title><link>http://www.makumba.org/page/MatchModeTagExample</link><description>Philipp Franz Freidl changed this page on Sat Aug 18 18:10:44 CEST 2012:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 5 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;        &amp;lt;mak:matchMode matchModes=&amp;quot;contains, equals, begins, ends&amp;quot;&amp;gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;        &amp;lt;mak:matchMode matchModes=&amp;quot;contains, equals, begins, ends&amp;quot;/&amp;gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>4</wiki:version><wiki:diff>http://www.makumba.org/page/MatchModeTagExample?do=Diff&amp;r1=-1</wiki:diff><dc:date>2012-08-18T16:10:44Z</dc:date><dc:creator>Philipp Franz Freidl</dc:creator><wiki:history>http://www.makumba.org/page/MatchModeTagExample?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/Blog'><title>Blog</title><link>http://www.makumba.org/page/Blog</link><description>Filip Kis changed this page on Wed Aug 03 19:32:35 CEST 2011:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 19 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;Visit the [[Plugin]] page for more info.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;Visit the [Plugin] page for more info.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>16</wiki:version><wiki:diff>http://www.makumba.org/page/Blog?do=Diff&amp;r1=-1</wiki:diff><dc:date>2011-08-03T17:32:35Z</dc:date><dc:creator>Filip Kis</dc:creator><wiki:history>http://www.makumba.org/page/Blog?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/Plugin'><title>Plugin</title><link>http://www.makumba.org/page/Plugin</link><description>Filip Kis changed this page on Sat Jul 23 10:55:26 CEST 2011:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 12 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;__Requirment:__ Eclipse J2EE Helios (3.6) or higher. You can find it on [Eclipse Download Site|http://www.eclipse.org/downloads/]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;__Requirment:__ Eclipse J2EE Helios (3.6.x). You can find it on [Eclipse Download Site|http://www.eclipse.org/helios/]. The newest Eclipse version (Indigo) is not yet supported. Stay tuned for updates.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>11</wiki:version><wiki:diff>http://www.makumba.org/page/Plugin?do=Diff&amp;r1=-1</wiki:diff><dc:date>2011-07-23T08:55:26Z</dc:date><dc:creator>Filip Kis</dc:creator><wiki:history>http://www.makumba.org/page/Plugin?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/MakumbaManifesto'><title>MakumbaManifesto</title><link>http://www.makumba.org/page/MakumbaManifesto</link><description>Cristian Bogdan changed this page on Sat Apr 09 08:05:06 CEST 2011:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 9 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;We also recognize that the way data is viewed is often very similar with the way data is described in the data model.  By allowing for queries in views, and by avoiding the repeating of the data description we advocate a smaller separation between data description and its user interface view, therefore weakening the model-view separation. While we do respect the MVC in general, we believe that it the strong separations it enforces are often not needed in applications dominated by browsing and updating, and we argue for the use of strong separation only when the situation demands it.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;By allowing for queries in views, and by avoiding the repeating of the data description in the model-view communication we advocate a smaller separation between data description and its user interface view, therefore weakening the model-view separation. While we do respect the MVC in general, we believe that it the strong separations it enforces are often not needed in applications dominated by browsing and updating, and we argue for the use of strong separation only when the situation demands it.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>4</wiki:version><wiki:diff>http://www.makumba.org/page/MakumbaManifesto?do=Diff&amp;r1=-1</wiki:diff><dc:date>2011-04-09T06:05:06Z</dc:date><dc:creator>Cristian Bogdan</dc:creator><wiki:history>http://www.makumba.org/page/MakumbaManifesto?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/Main'><title>Main</title><link>http://www.makumba.org/page/Main</link><description>Cristian Bogdan changed this page on Sat Apr 09 07:43:46 CEST 2011:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 11 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;* __everything is a query-fragment__. Displaying and modifying data is made simple especially through powerful features such as the Makumba lists and Makumba forms.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;* __everything is a query-fragment__. A large part of the application code can be expressed in queries and query fragments: displaying and modifying data, authentication, authorization, etc.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 13 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;* __mixing Model and View via queries __ is beneficial for web application development and helps eliminate many application layers without much architectural penalty, and leads to intuitive code. See Manifesto&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;* __mixing Model and View via queries __ is beneficial for web application development and helps eliminate many application layers without much architectural penalty, and leads to intuitive code. See [Manifesto|MakumbaManifesto].&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>8</wiki:version><wiki:diff>http://www.makumba.org/page/Main?do=Diff&amp;r1=-1</wiki:diff><dc:date>2011-04-09T05:43:46Z</dc:date><dc:creator>Cristian Bogdan</dc:creator><wiki:history>http://www.makumba.org/page/Main?do=PageInfo</wiki:history></item>
+<item rdf:about='http://www.makumba.org/page/Supporters'><title>Supporters</title><link>http://www.makumba.org/page/Supporters</link><description>Manu changed this page on Thu Apr 07 14:22:50 CEST 2011:&lt;br /&gt;&lt;hr /&gt;&lt;br /&gt;&lt;table class="diff" border="0" cellspacing="0" cellpadding="0"&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 8 changed 2 lines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;!!.SE - The Internet Infrastructure Foundation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;[{Image src='Supporters/se.gif'}]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;!!JetBrains&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 11 changed one line&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffrem"&gt;The .SE Internet fund supports projects that work towards the positive development of the Internet in Sweden.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;[{HTML &amp;lt;a href=&amp;quot;http://www.jetbrains.com/idea/features/refactoring.html&amp;quot; style=&amp;quot;display:block; background:#fff url(http://www.jetbrains.com/idea/opensource/img/all/banners/idea468x60_white.gif) no-repeat 10px 50%; border:solid 1px #0d3a9e; margin:0;padding:0;text-decoration:none;text-indent:0;letter-spacing:-0.001em; width:466px; height:58px&amp;quot; alt=&amp;quot;Java refactoring + smart code refactoring for JSP, XML, CSS, HTML &amp;amp;amp; JavaScript&amp;quot; title=&amp;quot;Java refactoring + smart code refactoring for JSP, XML, CSS, HTML &amp;amp;amp; JavaScript&amp;quot;&amp;gt;&amp;lt;span style=&amp;quot;margin: 5px 0 0 51px;padding: 0;float: left;font-size: 12px;cursor:pointer;  background-image:none;border:0;color: #0d3a9e; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;&amp;quot;&amp;gt;Hooked on&amp;lt;/span&amp;gt;&amp;lt;span style=&amp;quot;margin:0 0 0 205px;padding:18px 0 2px 0; line-height:13px;font-size:12px;cursor:pointer;  background-image:none;border:0;display:block; width:255px; color:#0d3a9e; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;&amp;quot;&amp;gt;Java refactoring + smart code refactoring &amp;lt;br/&amp;gt;for JSP, XML, CSS, HTML &amp;amp;amp; JavaScript&amp;lt;/span&amp;gt;&amp;lt;/a&amp;gt;}]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diff"&gt;At line 23 added 5 lines&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;!!.SE - The Internet Infrastructure Foundation&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;[{Image src='Supporters/se.gif'}]&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;The .SE Internet fund supports projects that work towards the positive development of the Internet in Sweden.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="diffadd"&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</description><wiki:version>4</wiki:version><wiki:diff>http://www.makumba.org/page/Supporters?do=Diff&amp;r1=-1</wiki:diff><dc:date>2011-04-07T12:22:50Z</dc:date><dc:creator>Manu</dc:creator><wiki:history>http://www.makumba.org/page/Supporters?do=PageInfo</wiki:history></item>
+</rdf:RDF>

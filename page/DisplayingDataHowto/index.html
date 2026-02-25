@@ -1,0 +1,445 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Displaying Data Howto
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/DisplayingDataHowto?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="DisplayingDataHowto" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_q3be13e50.jsp" rel="alternate" title="RSS wiki feed for page Makumba: DisplayingDataHowto." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item active" href="/page/Usage">usage</a>
+<a class="menu_item" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<ul class="MenuTreeRoot">
+<a href="/page/MakumbaManifesto"><li class="MenuTreeLeaf">makumba manifesto</li></a>
+<a href="/page/DataModelHowto"><li class="MenuTreeLeaf">defining the data model</li></a>
+<a class="MenuTreeSelected" href="/page/DisplayingDataHowto"><li class="MenuTreeLeafSelected">displaying data</li></a>
+<a href="/page/CreatingEditingHowto"><li class="MenuTreeLeaf">creating and editing data</li></a>
+<a href="/page/MultipleListsAndFormsHowto"><li class="MenuTreeLeaf">multiple lists and forms</li></a>
+<a href="/page/MakumbaAPIHowto"><li class="MenuTreeLeaf">makumba API</li></a>
+<a href="/page/Web20HowTo"><li class="MenuTreeLeaf">web 2.0 features</li></a>
+<a href="/page/AdvancedFeaturesHowto"><li class="MenuTreeLeaf">advanced features</li></a>
+<a href="/page/SearchFormsHowto"><li class="MenuTreeLeaf">search forms</li></a>
+<a href="/page/MDDFunctionsHowto"><li class="MenuTreeLeaf">MDD functions</li></a>
+<a href="/page/AuthenticationAuthorizationHowto"><li class="MenuTreeLeaf">access control</li></a>
+<a href="/page/LayoutHowto"><li class="MenuTreeLeaf">layout &amp; navigation</li></a>
+<a href="/page/DeveloperToolsHowTo"><li class="MenuTreeLeaf">developer tools</li></a>
+<a href="/page/Plugin"><li class="MenuTreeLeaf">eclipse plugin</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><div class="toc">
+<div class="collapsebox">
+<h4 id="section-TOC">Table of Contents</h4>
+<ul>
+<li class="toclevel-1"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-Introduction">Introduction</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-DisplayingDataThroughQueries">Displaying data through queries</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-ListingData">Listing data</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-LimitingTheList">Limiting the list</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-CreatingLinksWithObjectIdentifiers">Creating links with object identifiers</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-DisplayingSingleRecords">Displaying single records</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-DisplayingSubRecords">Displaying sub-records</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-UsingDatabaseDataOutsideMakumba">Using database data outside Makumba</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-MakumbaELFunctions">Makumba EL functions</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-GettingTheCurrentIndexInAMakList">Getting the current index in a &lt;mak:list&gt;</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-GettingTheTotalIndexInAMakList">Getting the total index in a &lt;mak:list&gt;</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-GettingTheTotalIndexOfThePreviousMakList">Getting the total index of the previous &lt;mak:list&gt;</a></li>
+</ul>
+</div>
+</div>
+</p><h2 id="section-DisplayingDataHowto-Introduction">Introduction<a class="hashlink" href="#section-DisplayingDataHowto-Introduction">#</a></h2>
+<p>One of the most common operations in database-driven websites is to display information to the user. Makumba provides a query-based approach to this through its <a class="wikipage" href="/page/ObjectTag">mak:object</a> and <a class="wikipage" href="/page/ListTag">mak:list</a> tags.
+</p>
+<h2 id="section-DisplayingDataHowto-DisplayingDataThroughQueries">Displaying data through queries<a class="hashlink" href="#section-DisplayingDataHowto-DisplayingDataThroughQueries">#</a></h2>
+<p>Both <a class="wikipage" href="/page/ObjectTag">&lt;mak:object&gt;</a> and <a class="wikipage" href="/page/ListTag">&lt;mak:list&gt;</a> use the same general principles for displaying data. <a class="wikipage" href="/page/ObjectTag">&lt;mak:object&gt;</a> is meant to view one record, e.g. an employee's profile or the details of a project, while <a class="wikipage" href="/page/ListTag">&lt;mak:list&gt;</a> handles multiple objects, and would be used to display a list of employees or projects.
+</p>
+<p>Let's say that we want to display the profile of an employee - we want to give details on the person, such as the name, as well as on the role in the company, such as the department, projects, etc.. 
+</p>
+<h3 id="section-DisplayingDataHowto-ListingData">Listing data<a class="hashlink" href="#section-DisplayingDataHowto-ListingData">#</a></h3>
+First, we need to select which employee we want to display - for this, we first create a page showing basic information of all employees, linking to the page with detailed profiles for a specific employee.
+<p>We can list data by using the <a class="wikipage" href="/page/ListTag">&lt;mak:list&gt;</a> tag, and by specifying which data type to list, using the "from" attribute of the tag.
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+&lt;/mak:list&gt;
+</pre></div>
+<p>Note that <i>e</i> is a <i>label</i> we need to give to the objects we are fetching.
+<div class="note"><div class="label">Note</div><div class="content"><p>This is similar to SQL, where you can do "SELECT ... FROM table t WHERE ....". While in SQL such a label is optional, in Makumba, it is mandatory.
+</p></div></div>
+</p>
+<p>A page with this list will tell Makumba to get all data from the <span class="code">company.Employee</span> type, and to iterate in the list over each record retrieved. Besides this, the page will not yet show anything - we need to specifically tell which fields we want to display. For this purpose, we can use the <a class="wikipage" href="/page/ValueTag">&lt;mak:value&gt;</a> tag, which prints data from one field in the data definition. Thus, we can extend our page:
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+  Name: &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;br/&gt;
+&lt;/mak:list&gt;
+</pre></div>
+<p>This will print us the name and surnames of all employees, one per line. 
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>The <a class="wikipage" href="/page/ValueTag">&lt;mak:value&gt;</a> tag expects to receive the name of a field in the data definition that is represented by the label in the <span class="code">expr</span> attribute. If you provide an unknown field, you will get an error message showing a <a class="interwiki" href="/api/org/makumba/NoSuchFieldException.html">NoSuchFieldException</a><img alt="" class="outlink" src="/images/out.png"/>.
+</p></div></div>
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>Note that we can freely mix HTML and Makumba. While Makumba is responsible for displaying data from the database, HTML is mainly used for formatting.
+</p></div></div>
+</p>
+<h4 id="section-DisplayingDataHowto-LimitingTheList">Limiting the list<a class="hashlink" href="#section-DisplayingDataHowto-LimitingTheList">#</a></h4>
+In many cases, you wouldn't want to display all the records from a specific data type, as they might be simply to many. Then, you can use the <span class="code">where</span> attribute of the <a class="wikipage" href="/page/ListTag">&lt;mak:list&gt;</a> to limit the records you will retrieve from the database. Let's say we want to display only the employees that have a salary over 2.000 (euro per month):
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e" where="e.salary &gt; 2000"&gt;
+  Name: &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;br/&gt;
+&lt;/mak:list&gt;
+</pre></div>
+<p>In the <span class="code">where</span> attribute, we can specify simple query language expressions, but also more complex conditions. As such, we can also logically combine conditions - if we want to show only female employees with a high salary, we can do
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e" where="e.salary &gt; 2000 AND e.gender='Female'"&gt;
+  Name: &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;br/&gt;
+&lt;/mak:list&gt;
+</pre></div>
+<p>In the example above, we made a comparison on the field <span class="code">gender</span>, which is an <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Int">enumeration</a> type. We can do the comparison both on the textual value ('Male' or 'Female'), as well as on the internal numerical representation (10 or 20), i.e. <span class="code">e.gender='Female'</span> and <span class="code">e.gender='20</span> or equivalent.
+</p>
+<p>The <span class="code">where</span> attribute can accept really complex conditions, involving e.g. sub-queries. Basically, the limitation is set by the <a class="wikipage" href="/page/QueryLanguages">query language</a> used.
+<h4 id="section-DisplayingDataHowto-CreatingLinksWithObjectIdentifiers">Creating links with object identifiers<a class="hashlink" href="#section-DisplayingDataHowto-CreatingLinksWithObjectIdentifiers">#</a></h4>
+When we want to display details on a specific data record, let's say an employee's profile, we need to know in the page showing that profile <i>which</i> employee to display. Each record in the data base has a unique identifier - thus, we need to pass on the identifier for that specific employee to the profile page. We can do this by mixing HTML links with a <a class="wikipage" href="/page/ValueTag">&lt;mak:value&gt;</a> tag:
+</p>
+<p></p>
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+  Name: &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; 
+  &lt;a href="employeeProfile.jsp?employee=&lt;mak:value expr='e'/&gt;"&gt;[Details]&lt;/a&gt; &lt;br/&gt;
+&lt;/mak:list&gt;
+</pre>
+<p>This will display us, next to the names of each employee, a link to the page for showing the profile, e.g. <span class="code">employeeProfile.jsp?employee=hhi4xw7</span>. The text that will appear on the link is the same as if the link was constructed in HTML, i.e. </p></div>[Details].
+
+<h3 id="section-DisplayingDataHowto-DisplayingSingleRecords">Displaying single records<a class="hashlink" href="#section-DisplayingDataHowto-DisplayingSingleRecords">#</a></h3>
+<p>Displaying a single record from the database requires us to limit our selection. This can be done with the <span class="code">where</span> attribute of the <a class="wikipage" href="/page/ObjectTag">&lt;mak:object&gt;</a>. If we have constructed a link to our employee profile page as described <a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-">above</a>, i.e. we are on a page employeeProfile.jsp?employee=hhi4xw7, we can do the following page:
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:object from="company.employee e" where="e=$employee"&gt;
+&lt;/mak:object&gt;
+</pre></div>
+<p>Instead of having a constant value in the equality comparison for <i>e</i>, we use a parameter present in the current page. <span class="code">$employee</span> will indicated Makumba to search for a parameter with the name <i>employee</i> in the page parameters (and subsequently in all the <a class="wikipage" href="/page/MakumbaAttributes">Makumba attributes</a>).
+</p>
+<p>We can thus extend our page, and display all of the employees details:
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:object from="company.employee e" where="e=$employee"&gt;
+  &lt;h1&gt; Profile page of &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;/h1&gt;
+  Title: 
+  &lt;mak:if test="e.gender='Male'"/&gt;Mr.&lt;/mak:if&gt;&lt;mak:if test="e.gender='Female'"/&gt;Mrs.&lt;/mak:if&gt;
+  &lt;br/&gt;
+  Birthday: &lt;mak:value expr="e.birthdate"/&gt; &lt;br/&gt;
+  Department: &lt;mak:value expr="e.department"/&gt; &lt;br/&gt;  
+&lt;/mak:object&gt;
+</pre></div>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>We can use the <a class="wikipage" href="/page/IfTag">&lt;mak:if&gt;</a> to do conditional processing. There is no &lt;mak:else&gt; tag available, thus if we have several options, we need to repeatedly use &lt;mak:if&gt;.
+</p></div></div>
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>If we use a <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-StructuralRelationalTypesAndCollections">relational type</a> in the expression of a &lt;mak:value&gt;, such as the <i>pointer</i> to <span class="code">company.Department</span> in the example above, not the all details of the record, but just the value of the <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-ObjectTitle">title field</a> will be displayed.
+</p></div></div>
+</p>
+<h3 id="section-DisplayingDataHowto-DisplayingSubRecords">Displaying sub-records<a class="hashlink" href="#section-DisplayingDataHowto-DisplayingSubRecords">#</a></h3>
+Let's consider still the employee profile from <a class="wikipage" href="/page/DisplayingDataHowto#section-DisplayingDataHowto-DisplayingSingleRecords">above</a>. In the profile page, we might also want to display all the projects a person is involved in, maybe in a tabular way. We can thus extend our example:
+<div class="prettify">
+<pre>
+&lt;mak:object from="company.employee e" where="e=$employee"&gt;
+  &lt;h1&gt; Profile page of &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;/h1&gt;
+  Title: 
+  &lt;mak:if test="e.gender='Male'"/&gt;Mr.&lt;/mak:if&gt;&lt;mak:if test="e.gender='Female'"/&gt;Mrs.&lt;/mak:if&gt;
+  &lt;br/&gt;
+  Birthday: &lt;mak:value expr="e.birthdate"/&gt; &lt;br/&gt;
+  Department: &lt;mak:value expr="e.department"/&gt; &lt;br/&gt;
+  &lt;h2&gt;Projects&lt;/h2&gt;
+  &lt;table&gt;
+    &lt;tr&gt; &lt;th&gt;Name&lt;/th&gt; &lt;th&gt;Leader&lt;/th&gt; &lt;th&gt;% Emplyoyed&lt;/th&gt; &lt;/tr&gt;
+    &lt;mak:list from="e.projects p"&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;mak:value expr="e.project"/&gt; &lt;/td&gt;
+      &lt;td&gt; 
+        &lt;mak:value expr="e.project.leader.name"/&gt; 
+        &lt;mak:value expr="e.project.leader.surname"/&gt;
+      &lt;/td&gt;
+      &lt;td&gt; &lt;mak:value expr="e.timePercentage"/&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/mak:list&gt;
+  &lt;/table&gt;
+&lt;/mak:object&gt;
+</pre></div>
+<div class="note"><div class="label">Note</div><div class="content"><p>We can nest <a class="wikipage" href="/page/ListTag">&lt;mak:list&gt;</a> and <a class="wikipage" href="/page/ObjectTag">&lt;mak:object&gt;</a> tags inside each other. Read more on this in the section on <a class="wikipage" href="/page/MultipleListsAndFormsHowto">multiple lists</a>.
+</p></div></div>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>When displaying relational types, we can traverse over several pointer relations at once. In the example above, <i>e.project</i> is a record of type <span class="code">company.Project</span>, and <i>e.project.leader</i> a record of type <span class="code">company.Employee</span>. Thus, we can access the fields <i>name</i> and surname<i> of this type by using the expression <span class="code">e.project.leader.name</span> and <span class="code">e.project.leader.surname</span>.
+</i></p></div></div>
+</p>
+<h2 id="section-DisplayingDataHowto-UsingDatabaseDataOutsideMakumba">Using database data outside Makumba<a class="hashlink" href="#section-DisplayingDataHowto-UsingDatabaseDataOutsideMakumba">#</a></h2>
+Sometimes you might want to do processing steps with the data that you cannot do in Makumba or with query languages, and you would want to use procedural programming to accomplish it. Makumba has inherit support for that, by allowing to <i>export</i> data to the page context, where it can be further processed e.g. via JSTL (Java Server Pages Standard Tag Library).
+Documentation on JSTL is available e.g. at:
+<ul><li><a class="external" href="http://www.roseindia.net/jstl/jstlcoretags.shtml">http://www.roseindia.net/jstl/jstlcoretags.shtml</a><img alt="" class="outlink" src="/images/out.png"/>
+</li><li><a class="external" href="http://java.sun.com/javaee/5/docs/tutorial/doc/bnakc.html">http://java.sun.com/javaee/5/docs/tutorial/doc/bnakc.html</a><img alt="" class="outlink" src="/images/out.png"/>
+</li></ul><p>To expose a database value to JSTL, we can use the <span class="code">var</span> and <span class="code">printVar</span> attributes in the <a class="wikipage" href="/page/ValueTag">&lt;mak:value&gt;</a> tag.
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:object from="company.employee e" where="e=$employee"&gt;
+  &lt;mak:value expr="e.birthdate" var="birthdayVar" printVar="birthdayPrintVar" /&gt;
+&lt;/mak:object&gt;
+</pre></div>
+<p>This example page will not display anything, as we told the <span style="font-family:monospace; white-space:pre;">mak:value</span> to put the data contained in the <span class="code">birthday</span> field into two variables. <span class="code">birthdayVar</span> will contain a Java Object of type <span class="code">java.util.Date</span>, while <span class="code">birthdayPrintVar</span> contains a Java Object of type String, generated by calling that objects <span class="code">toString()</span> method. The specific type generated by the <span class="code">var</span> attribute depends on the type in the data definition. You can find a comprehensive list in the documentation of <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Overview">primitive</a> and <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Overview2">structural (relational)</a> in Makumba Data Definitions.
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>The Java Object is only available within the <span style="font-family:monospace; white-space:pre;">mak:object</span> (or <span style="font-family:monospace; white-space:pre;">mak:list</span>) that defines it. If you need to use the value outside it, you will need to set it as a page context attribute: 
+</p>
+<pre>&lt;% pageContext.setAttribute("birthdayPrintVar", birthdayPrintVar); %&gt;</pre>
+The attribute content can then be passed to a JSTL var where needed with the code below: 
+<pre>&lt;c:set var="birthdayPrintVar"&gt;&lt;%=birthdayPrintVar%&gt;&lt;/c:set&gt;</pre>
+</div></div>
+</p>
+<p>The example below illustrates a usage example of JSTL, marking the current option as SELECTED in a dynamically generated dropdown:
+</p>
+<div class="prettify">
+<pre>
+Department:
+&lt;select name=departmentFilter size=1 onchange="javascript:form.submit();"&gt;
+  &lt;option value=""&gt;-- All --&lt;/option&gt;
+  &lt;mak:list from="company.Department department" where="department.company=$company" orderBy="department.name"&gt;
+    &lt;mak:value expr="department" printVar="department"/&gt; 
+    &lt;c:choose&gt;
+      &lt;c:when test="${!empty param.departmentFilter &amp;&amp; param.departmentFilter==department}"&gt;
+        &lt;option value="${department}" SELECTED&gt;&lt;mak:value expr="department.name"/&gt;&lt;/option&gt;
+      &lt;/c:when&gt;
+      &lt;c:otherwise&gt;
+        &lt;option value="${department}"&gt;&lt;mak:value expr="department.name"/&gt;&lt;/option&gt;
+      &lt;/c:otherwise&gt;
+    &lt;/c:choose&gt;
+  &lt;/mak:list&gt;
+&lt;/select&gt;
+</pre></div>
+<p></p>
+<h2 id="section-DisplayingDataHowto-MakumbaELFunctions">Makumba EL functions<a class="hashlink" href="#section-DisplayingDataHowto-MakumbaELFunctions">#</a></h2>
+Makumba provides a set of JSP Expression Language (EL) functions. More general information on EL can be found e.g. at:
+<ul><li><a class="external" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JSPIntro7.html">http://java.sun.com/j2ee/1.4/docs/tutorial/doc/JSPIntro7.html</a><img alt="" class="outlink" src="/images/out.png"/>
+</li><li><a class="external" href="http://www.oracle.com/technology/sample_code/tutorials/jsp20/simpleel.html">http://www.oracle.com/technology/sample_code/tutorials/jsp20/simpleel.html</a><img alt="" class="outlink" src="/images/out.png"/>
+</li></ul><p>The functions Makumba provides are described in detail in the <a class="wikipage" href="/page/Taglib">tag library reference documentation</a>. Here, we give a few examples on how to use them.
+</p>
+<h3 id="section-DisplayingDataHowto-GettingTheCurrentIndexInAMakList">Getting the current index in a &lt;mak:list&gt;<a class="hashlink" href="#section-DisplayingDataHowto-GettingTheCurrentIndexInAMakList">#</a></h3>
+Often when listing data, we want to display a counter next to the data we show to the user. This can be achieved with the <a class="wikipage" href="/page/CountFunction">mak:count()</a> function, e.g. as follows:
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+  #${mak:count()} Name: &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;br/&gt;
+&lt;/mak:list&gt;
+</pre></div>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>mak:count() will always start with <b>1</b> as the first index.
+</p></div></div>
+</p>
+<p>In combination with JSTL conditional tags such as &lt;c:if&gt;, <a class="wikipage" href="/page/CountFunction">mak:count()</a> can be also used to display a header only in the first iteration of the list:
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+  &lt;c:if test="${mak:count()==1}"&gt;These are the employees: &lt;/c:if&gt;
+  #${mak:count()} Name: &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;br/&gt;
+&lt;/mak:list&gt;
+</pre></div>
+<p>If we use a table to list our data, we might want to show every second row with a different background colour. This can also be achieved with mak:count():
+</p>
+<div class="prettify">
+<pre>
+&lt;table&gt;
+  &lt;mak:list from="company.Employee e"&gt;
+    &lt;tr bgcolor="${mak:count()%2==1?"white":"grey"}"&gt;
+      &lt;td&gt; #${mak:count()} &lt;/td&gt;
+      &lt;td&gt; &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/mak:list&gt;
+&lt;/table&gt;  
+</pre></div>
+<h3 id="section-DisplayingDataHowto-GettingTheTotalIndexInAMakList">Getting the total index in a &lt;mak:list&gt;<a class="hashlink" href="#section-DisplayingDataHowto-GettingTheTotalIndexInAMakList">#</a></h3>
+Sometimes you might want to display the total number of records you are going to display. This can be achieved with using <a class="wikipage" href="/page/MaxCountFunction">mak:maxCount()</a> in combination with <a class="wikipage" href="/page/CountFunction">mak:count()</a> and &lt;c:if&gt; from the JSTL library, as follows:
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+  &lt;c:if test="${mak:count()==1}"&gt;Displaying ${mak:maxCount()] employees: &lt;/c:if&gt;
+  #${mak:count()} Name: &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;br/&gt;
+&lt;/mak:list&gt;
+</pre></div>
+<p>Another scenario when mak:maxCount() comes in handy is when you want to display data from a list in a row, and put a separator, such as a comma, between each entry.
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+  &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt;
+  &lt;c:if test="${mak:count()!=mak:maxCount()}"&gt;, &lt;/c:if&gt;
+&lt;/mak:list&gt;
+</pre></div>
+<p>Instead of using &lt;c:if&gt;, we can also just use JSP EL directly to achieve a more compact code:
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+  &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; 
+  ${mak:count()!=mak:maxCount()? ", " : ""}
+&lt;/mak:list&gt;
+</pre></div>
+<h3 id="section-DisplayingDataHowto-GettingTheTotalIndexOfThePreviousMakList">Getting the total index of the <b>previous</b> &lt;mak:list&gt;<a class="hashlink" href="#section-DisplayingDataHowto-GettingTheTotalIndexOfThePreviousMakList">#</a></h3>
+In many cases, you need to know how many records the previous <a class="wikipage" href="/page/ListTag">&lt;mak:list&gt;</a> retrieved. Frequently, you are specifically interested to display a message if the previous list retrieved no records at all, and thus didn't display anything in the page. This can be done with the <a class="wikipage" href="/page/LastCountFunction">mak:lastCount()</a> function, in combination with a &lt;c:if&gt; tag from JSTL:
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+  &lt;c:if test="${mak:count()==1}"&gt;Displaying ${mak:maxCount()] employees: &lt;/c:if&gt;
+  #${mak:count()} Name: &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;br/&gt;
+&lt;/mak:list&gt;
+&lt;c:if test="${mak:lastCount()==0}"&gt; There are no employees registered ! &lt;/c:if&gt;
+</pre></div>
+<p>Again, this could also be achieved using EL only, rather than JSTL's &lt;c:if&gt; tag, to achieve a more compact code:
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:list from="company.Employee e"&gt;
+  &lt;c:if test="${mak:count()==1}"&gt;Displaying ${mak:maxCount()] employees: &lt;/c:if&gt;
+  #${mak:count()} Name: &lt;mak:value expr="e.name"/&gt; &lt;mak:value expr="e.surname"/&gt; &lt;br/&gt;
+&lt;/mak:list&gt;
+${mak:lastCount()==0? "There are no employees registered !" : ""}
+</pre></div>
+<p><div class="note warning"><div class="label">Warning</div><div class="content"><p>If you use mak:lastCount() in a page that has no &lt;mak:list&gt; defined before, you will get an error message.
+</p></div></div>
+</p>
+<span style="display:hidden;"> <a class="wikipage" href="/page/CategoryUsage">Category Usage</a> </span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on May 16 2010
+      
+    
+
+   <a class="feed" href="/rss_q3be13e50.jsp" title="RSS feed for page DisplayingDataHowto"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

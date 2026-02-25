@@ -1,0 +1,279 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Java Business Logic
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/JavaBusinessLogic?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="JavaBusinessLogic" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_qf8aadb82.jsp" rel="alternate" title="RSS wiki feed for page Makumba: JavaBusinessLogic." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item" href="/page/Usage">usage</a>
+<a class="menu_item active" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<ul class="MenuTreeRoot">
+<a href="/page/DataDefinitions"><li class="MenuTreeLeaf">data definitions</li></a>
+<a href="/page/ValidationRules"><li class="MenuTreeLeaf">validation rules</li></a>
+<a href="/page/QueryLanguages"><li class="MenuTreeLeaf">query languages</li></a>
+<a href="/page/QueryFragments"><li class="MenuTreeLeaf">query fragments</li></a>
+<a href="/page/Taglib"><li class="MenuTree">JSP tag library</li></a>
+<a href="/page/RequestLifecycle"><li class="MenuTreeExpanded">makumba request lifecycle</li></a>
+<ul class="MenuTree">
+<a href="/page/Authentication"><li class="MenuTreeLeaf">authentication</li></a>
+<a href="/page/Authorization"><li class="MenuTreeLeaf">authorization</li></a>
+<a href="/page/FormSubmissionHandling"><li class="MenuTreeLeaf">form submission</li></a>
+<a class="MenuTreeSelected" href="/page/JavaBusinessLogic"><li class="MenuTreeLeafSelected">java business logic</li></a>
+<a href="/page/ErrorHandling"><li class="MenuTreeLeaf">error handling</li></a>
+<a href="/page/MakumbaAttributes"><li class="MenuTreeLeaf">makumba Attributes</li></a>
+</ul>
+<a href="/api/org/makumba/package-summary.html"><li class="MenuTreeLeaf">API Documentation</li></a>
+<a href="/page/DeveloperDocumentation"><li class="MenuTree">developer documentation</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><div class="toc">
+<div class="collapsebox">
+<h4 id="section-TOC">Table of Contents</h4>
+<ul>
+<li class="toclevel-1"><a class="wikipage" href="/page/JavaBusinessLogic#section-JavaBusinessLogic-Introduction">Introduction</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/JavaBusinessLogic#section-JavaBusinessLogic-BusinessLogicDiscovery">Business Logic discovery</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/JavaBusinessLogic#section-JavaBusinessLogic-BusinessLogicHandlerMethods">Business Logic handler methods</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/JavaBusinessLogic#section-JavaBusinessLogic-GenericHandlerMethods">Generic handler methods</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/JavaBusinessLogic#section-JavaBusinessLogic-CustomHandlerMethods">Custom handler methods</a></li>
+</ul>
+</div>
+</div>
+</p><h2 id="section-JavaBusinessLogic-Introduction">Introduction<a class="hashlink" href="#section-JavaBusinessLogic-Introduction">#</a></h2>
+<p>Makumba Business Logic (BL) is executed at form submission time. It makes it possible to perform additional validation, data manipulation and other processing tasks. Makumba BL is associated with JSP pages through a special discovery mechanism, and further through the usage of so-called handler methods. Data manipulation can be performed using the most important makumba API elements.
+</p>
+<h2 id="section-JavaBusinessLogic-BusinessLogicDiscovery">Business Logic discovery<a class="hashlink" href="#section-JavaBusinessLogic-BusinessLogicDiscovery">#</a></h2>
+Each JSP page will determine its handler class on first access, after being compiled. If the class changes on disk, a web-app reload is generally needed for the new class to take effect.
+<p>The handler is "discovered" by decomposing the full path of the JSP page, and finding a class with a matching name. Decomposition breaks the full path at every capital letter, or forward slash. For example, with the page path /employee/profile/personalProfile.jsp, the following criteria are applied, in order:
+</p>
+<table border="1" class="wikitable"><tr class="odd"><th> Criterion </th><th>	Java classes checked for</th></tr>
+<tr><td> page name </td><td> EmployeeProfilePersonalProfileLogic</td></tr>
+<tr class="odd"><td> caps parts of page/directory name </td><td> EmployeeProfilePersonalLogic</td></tr>
+<tr><td> directory name </td><td> EmployeeProfile</td></tr>
+<tr class="odd"><td> parent directory name(s) </td><td> EmployeeLogic, Logic</td></tr>
+</table><p>The class name prefix (e.g. java package name) can be regulated per parts of the site in in the <a class="wikipage" href="/page/MakumbaConfiguration#section-MakumbaConfiguration-BusinessLogicPackagesBusinessLogicPackages">Makumba.conf configuration file</a>, in the [businessLogicPackages] section. For example, the section can contain:
+</p>
+<div class="prettify">
+<pre>
+/employee = org.myCompany.employee
+/makumba = org.makumba
+/=test
+</pre></div>
+<p><table border="1" class="wikitable">
+<tr>
+<th> path </th>
+<th> Java classes checked for</th>
+</tr>
+<tr>
+<td> /employee/profile/index.jsp </td>
+<td> org.myCompany.employee.ProfilePersonalProfileLogic<br/>
+org.myCompany.ProfileLogic<br/>
+org.myCompany.Logic
+</td>
+</tr>
+<tr>
+<td> /makumba/tests/x.jsp </td>
+<td> org.makumba.TestsXLogic<br/>
+org.makumba.TestsLogic<br/>
+org.makumba.Logic
+</td>
+</tr>
+<tr>
+<td> /some.jsp </td>
+<td> test.SomeLogic<br/>
+test.Logic
+</td>
+</tr>
+</table>
+</p>
+<p>There are good reasons to take into account the name of the response page of a form when looking for the business logic. Still, it is the name of the page that contains the form which matters, not the name of the action page. It is good practice for both pages to actually have the same handler class.
+</p>
+<h2 id="section-JavaBusinessLogic-BusinessLogicHandlerMethods">Business Logic handler methods<a class="hashlink" href="#section-JavaBusinessLogic-BusinessLogicHandlerMethods">#</a></h2>
+On form submission, the data in the form can be accessed for validation and processing purposes. Depending on the action at hand, there are different kind of generic handlers that can be used. It is also possible to define custom handlers.
+<p><div class="note"><div class="label">Note</div><div class="content"><p>See the <a class="wikipage" href="/page/MakumbaAPIHowto">makumba API documentation</a> to learn more about the makumba API elements.</p></div></div>
+</p>
+<h3 id="section-JavaBusinessLogic-GenericHandlerMethods">Generic handler methods<a class="hashlink" href="#section-JavaBusinessLogic-GenericHandlerMethods">#</a></h3>
+<p>These are the handlers used by <a class="wikipage" href="/page/NewFormTag">mak:newForm</a>, <a class="wikipage" href="/page/EditFormTag">mak:editForm</a>, <a class="wikipage" href="/page/AddFormTag">mak:addForm</a> and <a class="wikipage" href="/page/DeleteTag">mak:delete</a>. Their name is constructed on the handler type, the action type, and the type of the MDD that is being processed by the form.
+</p>
+<p>When creating, editing, adding to and deleting the type company.Project, the generic handler methods are:
+</p>
+<p><table border="1" class="wikitable">
+<tr>
+<th> action </th>
+<th> generic handler methods</th>
+</tr>
+<tr>
+<td> new 	</td>
+<td> <span class="prettify"><span style="font-family:monospace; white-space:pre;">on_newCompanyProject(Dictionary&lt;String, Object&gt; d, Attributes a, Transaction t) {} </span></span> <br/>
+<span class="prettify"><span style="font-family:monospace; white-space:pre;">after_newCompanyProject(Pointer p, Dictionary&lt;String, Object&gt; d, Attributes a, Transaction t) {} </span></span></td>
+</tr>
+<tr>
+<td> add 	</td>
+<td> <span class="prettify"><span style="font-family:monospace; white-space:pre;">on_addCompanyProject(Pointer p, Dictionary&lt;String, Object&gt; d, Attributes a, Transaction t) {} </span></span> <br/>
+<span class="prettify"><span style="font-family:monospace; white-space:pre;"> after_addCompanyProject(Pointer p, Dictionary&lt;String, Object&gt; d, Attributes a, Transaction t) {} </span></span> <br/>
+</td>
+</tr>
+<tr>
+<td> edit 	</td>
+<td> <span class="prettify"><span style="font-family:monospace; white-space:pre;">on_editCompanyProject(Pointer p, Dictionary&lt;String, Object&gt; d, Attributes a, Transaction t) {} </span></span> <br/>
+<span class="prettify"><span style="font-family:monospace; white-space:pre;">after_editCompanyProject(Pointer p, Dictionary&lt;String, Object&gt; d, Attributes a, Transaction t) {} </span></span></td>
+</tr>
+<tr>
+<td> delete 	</td>
+<td> <span class="prettify"><span style="font-family:monospace; white-space:pre;">on_deleteCompanyProject(Pointer p, Attributes a, Transaction t) {} </span></span> <br/>
+<span class="prettify"><span style="font-family:monospace; white-space:pre;">after_deleteCompanyProject(Pointer p, Attributes a, Transaction t) {} </span></span></td>
+</tr>
+</table>
+</p>
+<p></p>
+<p>These methods make it possible to access the form data contained in the Dictionary object and the page and request data held by the Attributes object. Additional queries and/or operations on the database can be performed using the Transaction, whilst the Pointer is a relational object that uniquely identifies the record that is being manipulated.
+</p>
+<p></p>
+<h3 id="section-JavaBusinessLogic-CustomHandlerMethods">Custom handler methods<a class="hashlink" href="#section-JavaBusinessLogic-CustomHandlerMethods">#</a></h3>
+<p>When using the <a class="wikipage" href="/page/FormTag">mak:form</a> tag, it is possible to define custom handler methods by specifying their name in the handler attribute of the tag.
+</p>
+<p>These handler methods need to have the following signature
+</p>
+<div class="prettify">
+<pre>
+public void handlerMethod(Dictionary&lt;String, Object&gt; formFields, Attributes restOfArguments, Transaction t) { }
+</pre></div>
+<p>The handler can then be placed in the Business Logic file corresponding to the page.
+</p>
+<span style="display:none;"><a class="wikipage" href="/page/CategoryDocumentation">Category Documentation</a></span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on July 21 2010
+      
+    
+
+   <a class="feed" href="/rss_qf8aadb82.jsp" title="RSS feed for page JavaBusinessLogic"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

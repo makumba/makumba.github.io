@@ -1,0 +1,519 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Quick Start
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/QuickStart?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="QuickStart" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_q994fafc5.jsp" rel="alternate" title="RSS wiki feed for page Makumba: QuickStart." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item active" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item" href="/page/Usage">usage</a>
+<a class="menu_item" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><div class="toc">
+<div class="collapsebox">
+<h4 id="section-TOC">Table of Contents</h4>
+<ul>
+<li class="toclevel-1"><a class="wikipage" href="/page/QuickStart#section-QuickStart-Introduction">Introduction</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/QuickStart#section-QuickStart-DownloadAndInstallation">Download and installation</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/QuickStart#section-QuickStart-InstallationWithMavenOnTheCommandLine">Installation with Maven on the command line</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/QuickStart#section-QuickStart-InstallationWithEclipseAndTheM2eclipsePlugin">Installation with Eclipse and the m2eclipse plugin</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/QuickStart#section-QuickStart-DescribingTheData">Describing the data</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/QuickStart#section-QuickStart-ManipulatingTheData">Manipulating the data</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/QuickStart#section-QuickStart-EnteringNewData">Entering new data</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/QuickStart#section-QuickStart-DisplayingData">Displaying data</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/QuickStart#section-QuickStart-ModifyingExistingData">Modifying existing data</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/QuickStart#section-QuickStart-DeletingData">Deleting data</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/QuickStart#section-QuickStart-ValidatingDataOnInput">Validating data on input</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/QuickStart#section-QuickStart-BusinessLogic">Business Logic</a></li>
+</ul>
+</div>
+</div>
+</p><h2 id="section-QuickStart-Introduction">Introduction<a class="hashlink" href="#section-QuickStart-Introduction">#</a></h2>
+This guide will help you getting started with Makumba using the <a class="external" href="http://www.eclipse.org/">Eclipse</a><img alt="" class="outlink" src="/images/out.png"/> IDE. It explains the notion of Makumba Data Definitions, and shows you how to make a simple site where you can display and create data.
+<p>We'll take the example of a company management site, where you can manage the employees, departments and projects of a company.
+</p>
+<h2 id="section-QuickStart-DownloadAndInstallation">Download and installation<a class="hashlink" href="#section-QuickStart-DownloadAndInstallation">#</a></h2>
+<p>You can use <a class="external" href="http://maven.apache.org/">Maven</a><img alt="" class="outlink" src="/images/out.png"/> in order to create a new template project for makumba.
+</p>
+<h3 id="section-QuickStart-InstallationWithMavenOnTheCommandLine">Installation with Maven on the command line<a class="hashlink" href="#section-QuickStart-InstallationWithMavenOnTheCommandLine">#</a></h3>
+<p>On the command line, type:
+</p>
+<pre>
+mvn archetype:generate \
+  -DarchetypeCatalog=http://www.makumba.org \
+  -DgroupId=myorganisation \
+  -DartifactId=myWebapp \
+  -Dversion=1.0-SNAPSHOT \
+  -Dpackage=org.myorganisation
+</pre>
+<p>This will create a new makumba project with a pre-configured HSQLDB database and a sample page. Next, you can run
+</p>
+<pre>
+mvn tomcat:run
+</pre>
+<p>in order to run the web-app using Tomcat (we'll add support for Jetty soon).
+</p>
+<p>Type
+</p>
+<pre>
+mvn eclipse:eclipse
+</pre>
+<p>in order to set up the project so that it can be imported into eclipse.
+</p>
+<h3 id="section-QuickStart-InstallationWithEclipseAndTheM2eclipsePlugin">Installation with Eclipse and the m2eclipse plugin<a class="hashlink" href="#section-QuickStart-InstallationWithEclipseAndTheM2eclipsePlugin">#</a></h3>
+<p>Alternatively, you can directly create the project in Eclipse using e.g. the <a class="external" href="http://m2eclipse.sonatype.org">m2eclipse plugin</a><img alt="" class="outlink" src="/images/out.png"/>. In this case you can directly look for the archetype group "org.makumba" in the archetype catalog assembled by the Nexus Indexer.
+</p>
+<p>Create a new maven project
+</p>
+<p><span class="imageplugin">
+<a href="/page/QuickStart/new_project.png"><img src="/attach/QuickStart/new_project.png"/></a></span>
+</p>
+<p>Enter the workspace settings
+</p>
+<p><span class="imageplugin">
+<a href="/page/QuickStart/next.png"><img src="/attach/QuickStart/next.png"/></a></span>
+</p>
+<p>The next page will be shown
+</p>
+<p><span class="imageplugin">
+<a href="/page/QuickStart/configure.png"><img src="/attach/QuickStart/configure.png"/></a></span>
+</p>
+<p>From catalogs, choose Nexus Indexer and type 'org.makumba' in the filter field
+</p>
+<p><span class="imageplugin">
+<a href="/page/QuickStart/mak_archetype.png"><img src="/attach/QuickStart/mak_archetype.png"/></a></span>
+</p>
+<p>Enter the project specific information
+</p>
+<p><span class="imageplugin">
+<a href="/page/QuickStart/finish.png"><img src="/attach/QuickStart/finish.png"/></a></span>
+</p>
+<p>The project has then following structure
+</p>
+<p><span class="imageplugin">
+<a href="/page/QuickStart/project_files.png"><img src="/attach/QuickStart/project_files.png"/></a></span>
+</p>
+<p>This is the standard Maven project structure. The resulting web-application structure (according to the Servlet Standard 2.4) is as follows:
+</p>
+<pre>
+index.jsp
+META-INF/
+WEB-INF/
+  web.xml
+  lib/
+  classes/
+    dataDefinitions/
+      general/
+        Person.mdd</pre>
+<p>Now click the green play button and choose Run &gt; Maven Build.
+<span class="imageplugin">
+<a href="/page/QuickStart/runmavenbuild.png"><img src="/attach/QuickStart/runmavenbuild.png"/></a></span>
+</p>
+<p>Give the run configuration a name (here 'myproduct') and type tomcat:run in the Goals field. Then click run.
+<span class="imageplugin">
+<a href="/page/QuickStart/runmavenbuildtomcat.png"><img src="/attach/QuickStart/runmavenbuildtomcat.png"/></a></span>
+</p>
+<p>You should now be able to access the default site in your browser at <span class="code">http://localhost:8080/myproduct </span>
+</p>
+<p><span class="imageplugin">
+<a href="/page/QuickStart/site.png"><img src="/attach/QuickStart/site.png"/></a></span>
+</p>
+<p></p>
+<h2 id="section-QuickStart-DescribingTheData">Describing the data<a class="hashlink" href="#section-QuickStart-DescribingTheData">#</a></h2>
+Makumba uses so-called <a class="wikipage" href="/page/DataModelHowto">Makumba Data Definitions</a>.
+<p>MDDs are simple text files that contain the description of an entity, i.e. its fields but also validation rules and query functions. These files are kept in the <tt>dataDefinitions</tt> directory in the classpath of the web-application.
+</p>
+<p>Start by creating a new company directory in the <tt>src/main/resources/dataDefinitions</tt> directory and create the file <tt>Employee.mdd</tt> with the following content:
+</p>
+<div class="prettify">
+<pre>
+name = char[200]
+surname = char[200]
+gender = int{"Male" = 10, "Female" = 20}
+birthdate = date
+salary = real
+
+fullName() { name || (' ' || surname) }
+</pre></div>
+<i>name, surname, gender, birthdate and salary</i> are <b>field definitions</b>, while <i>fullName()</i> is a so-called <b>query-function</b>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>Makumba automatically generates the database schema based on MDDs. 
+</p>
+<p>MDD changes are taken into account when the webapp is reloaded, provided that altering the corresponding type is allowed in the configuration.
+</p></div></div>
+</p>
+<p></p>
+<h2 id="section-QuickStart-ManipulatingTheData">Manipulating the data<a class="hashlink" href="#section-QuickStart-ManipulatingTheData">#</a></h2>
+<h3 id="section-QuickStart-EnteringNewData">Entering new data<a class="hashlink" href="#section-QuickStart-EnteringNewData">#</a></h3>
+Let's make it possible to feed some data to our webapp.
+<p>For this, let's create a page that contains a <tt>mak:newForm</tt>, which enables us to enter new data. Create the file <tt>employeeNew.jsp</tt> with following content:
+</p>
+<div class="prettify">
+<pre>
+&lt;%@ taglib uri="http://www.makumba.org/presentation" prefix="mak" %&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Create new employee record&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;mak:newForm type="company.Employee" method="post" action="index.jsp"&gt;
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;td&gt;&lt;mak:input field="name" /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Surname&lt;/th&gt;
+      &lt;td&gt;&lt;mak:input field="surname" /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Birthdate&lt;/th&gt;
+      &lt;td&gt;&lt;mak:input field="birthdate" /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Salary&lt;/th&gt;
+      &lt;td&gt;&lt;mak:input field="salary" /&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;input type="submit" value="Add"&gt; &lt;input type="reset" value="Cancel" onClick="javascript:back();"&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/mak:newForm&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;        
+</pre></div>
+<p>When submitting the form, the data is directly saved into the database, without any additional effort. Let's explain a bit each of the elements:
+</p>
+<ul><li>the <tt>mak:newForm</tt> tag generates the form for a given <b>type</b> (in our case, the type is <tt>company.Employee</tt>). Upon form submission an INSERT query is generated. The <b>action</b> attribute specifies the page to show after the form is submitted.
+</li><li>the <tt>mak:input</tt> tags generate the inputs, depending on their type (for instance, the birthdate field is automatically shown as a date input). The <b>field</b> attribute corresponds to the field name in the MDD.
+</li></ul><h3 id="section-QuickStart-DisplayingData">Displaying data<a class="hashlink" href="#section-QuickStart-DisplayingData">#</a></h3>
+Let's now see how to display data using the <tt>mak:list</tt> tag. For this we will edit the <tt>index.jsp</tt> to display the list of all Employees:
+<div class="prettify">
+<pre>
+&lt;%@ taglib uri="http://www.makumba.org/presentation" prefix="mak" %&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Makumba template welcome page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;h1&gt;List of employees&lt;/h1&gt;
+    &lt;mak:list from="company.Employee e"&gt;
+      &lt;em&gt;&lt;mak:value expr="e.fullName()" /&gt;&lt;/em&gt; born on &lt;mak:value expr="e.birthdate" /&gt;&lt;br /&gt;
+    &lt;/mak:list&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+<ul><li>the <tt>mak:list</tt> tag generates a SELECT query. In our case, the query's FROM section is <tt>company.Employee</tt>.
+</li><li>the <tt>mak:input</tt> tags represent the projections of the query. The <b>expr</b> attribute can contain a field, an MQL expression or a query function name.
+</li></ul><div class="note"><div class="label">Note</div><div class="content"><p><tt>mak:list</tt> tags can be nested, so as to display the content of sets.
+</p></div></div>
+<p></p>
+<h3 id="section-QuickStart-ModifyingExistingData">Modifying existing data<a class="hashlink" href="#section-QuickStart-ModifyingExistingData">#</a></h3>
+The <tt>mak:editForm</tt> tag lets you edit existing data. 
+<p>Let's illustrate this with a new file <tt>employeeEdit.jsp</tt> containing the following:
+</p>
+<div class="prettify">
+<pre>
+&lt;%@ taglib uri="http://www.makumba.org/presentation" prefix="mak" %&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Edit employee record&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;mak:object from="company.Employee e" where="e=$employee"&gt;
+  &lt;mak:editForm object="e" method="post" action="index.jsp"&gt;
+    &lt;table&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;td&gt;&lt;mak:input field="name" /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Surname&lt;/th&gt;
+        &lt;td&gt;&lt;mak:input field="surname" /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Birthdate&lt;/th&gt;
+        &lt;td&gt;&lt;mak:input field="birthdate" /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;th&gt;Salary&lt;/th&gt;
+        &lt;td&gt;&lt;mak:input field="salary" /&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;&lt;input type="submit" value="Edit"&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;
+  &lt;/mak:editForm&gt;
+  &lt;/mak:object&gt;
+  
+  &lt;/body&gt;
+&lt;/html&gt;        
+</pre></div>
+<p>When submitting the form, the data is directly updated in the database, without any additional effort.
+</p>
+<ul><li>the <tt>mak:editForm</tt> is similar to the <tt>mak:newForm</tt> but will generate an UPDATE query instead of an INSERT one upon form submission
+</li><li>the <tt>mak:input</tt> tags, just as when used in combination with the <tt>mak:newForm</tt>, generate the inputs, depending on their type (for instance, the birthdate field is automatically shown as a date input). The <b>field</b> attribute corresponds to the field name in the MDD.
+</li></ul><p>Note however that one needs to specify the object that is to be edited. 
+This is achieved by e.g. passing the <tt>employee</tt> parameter to the edit page. For this purpose, let us edit <tt>index.jsp</tt> and add from there a link to <tt>employeeEdit.jsp</tt>
+</p>
+<div class="prettify">
+<pre>
+&lt;%@ taglib uri="http://www.makumba.org/presentation" prefix="mak" %&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Makumba template welcome page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;h1&gt;List of employees&lt;/h1&gt;
+    &lt;mak:list from="company.Employee e"&gt;
+      &lt;em&gt;&lt;mak:value expr="e.fullName()" /&gt;&lt;/em&gt; born on &lt;mak:value expr="e.birthdate" /&gt;
+      [&lt;a href="employeeEdit.jsp?employee=&lt;mak:value expr='e'/&gt;"&gt;Edit&lt;/a&gt;]&lt;br /&gt;
+    &lt;/mak:list&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+<p></p>
+<h3 id="section-QuickStart-DeletingData">Deleting data<a class="hashlink" href="#section-QuickStart-DeletingData">#</a></h3>
+Finally deleting data is done via the <tt>mak:delete</tt> tag.
+This can be illustrated by creating a file <tt>employeeDelete.jsp</tt> with the following content: 
+<div class="prettify">
+<pre>
+&lt;%@ taglib uri="http://www.makumba.org/presentation" prefix="mak" %&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Confirm employee record deletion&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  
+  &lt;mak:object from="company.Employee e" where="e=$employee"&gt;
+    &lt;mak:delete object="e" action="index.jsp"&gt;
+      Delete &lt;mak:value expr="e.fullName()"/&gt;
+    &lt;/mak:delete&gt;
+  &lt;/mak:object&gt;
+  
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+<p><tt>mak:delete</tt> is rendered as a link or a button, that once clicked will generate a DELETE query.
+</p>
+<p>Again one needs to specify the object that is to be deleted. 
+This is achieved by e.g. passing the <tt>employee</tt> parameter to the delete confirmation page. For this purpose, let us edit <tt>index.jsp</tt> and add from there a link to <tt>employeeDelete.jsp</tt>
+</p>
+<div class="prettify">
+<pre>
+&lt;%@ taglib uri="http://www.makumba.org/presentation" prefix="mak" %&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Makumba template welcome page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+    &lt;h1&gt;List of employees&lt;/h1&gt;
+    &lt;mak:list from="company.Employee e"&gt;
+      &lt;em&gt;&lt;mak:value expr="e.fullName()" /&gt;&lt;/em&gt; born on &lt;mak:value expr="e.birthdate" /&gt;
+      [&lt;a href="employeeEdit.jsp?employee=&lt;mak:value expr='e'/&gt;"&gt;Edit&lt;/a&gt;]
+      [&lt;a href="employeeDelete.jsp?employee=&lt;mak:value expr='e'/&gt;"&gt;Delete&lt;/a&gt;]&lt;br /&gt;
+    &lt;/mak:list&gt;
+    
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre></div>
+<h2 id="section-QuickStart-ValidatingDataOnInput">Validating data on input<a class="hashlink" href="#section-QuickStart-ValidatingDataOnInput">#</a></h2>
+<p>makumba makes it possible to validate data consistently for each entity using validation rules that are defined in the <a class="wikipage" href="/page/DataDefinitions">Makumba Data Definition</a>.
+</p>
+<p>Add the following line in Employee.mdd file:
+</p>
+<div class="prettify">
+<pre>
+range(salary) { 500..? } : "The minimum legal salary is 500 euro"
+</pre></div>
+<p>This will ensure that when a value is entered for the salary (on creation or edition), the minimal amount is respected (the error message will be displayed otherwise).
+</p>
+<p>makumba has more kind of validation rules, check the <a class="wikipage" href="/page/ValidationRules">validation rule documentation</a> to learn more.
+</p>
+<p></p>
+<h2 id="section-QuickStart-BusinessLogic">Business Logic<a class="hashlink" href="#section-QuickStart-BusinessLogic">#</a></h2>
+In order to perform more advanced processing of the form data, makumba defines a Java-based Business Logic mechanism. Note that if you only need to handle simple cases, you won't need to code one single line of Java in order to get the application running.
+<p>Edit <span class="code">src/main/resources/Makumba.conf</span> and add the following line in the <span class="code">[businessLogicPackages]</span> section:
+</p>
+<div class="prettify">
+<pre>
+[businessLogicPackages]
+default=com.myCompany.companyManager
+</pre>
+</div>
+<p>This will map the default resolution for business logic classes to the <span class="code">com.myCompany.companyManager</span> package. You can thus structure different parts (folders) of the web-application and associate them with specific business logic packages. This comes in handy when your application starts to grow.
+</p>
+<p>Now it's time to create a bit of business logic. Create the file <span class="code">src/main/java/com/myCompany/companyManager/Logic.java</span> and insert the following content:
+</p>
+<div class="prettify">
+<pre>
+package com.myCompany.companyManager;
+
+import java.util.Logger;
+import org.makumba.Attributes;
+import org.makumba.LogicException;
+import org.makumba.Pointer;
+import org.makumba.Transaction;
+
+public class Logic {
+
+  private Logger logger = Logger.getLogger("com.myCompany.employee");
+
+  public void after_newCompanyEmployee(Pointer p, Dictionary&lt;String, Object&gt; d, Attributes a, Transaction t) throws LogicException {
+  
+  logger.info("New employee " + d.get("name") + " " + d.get("surname") + " created.");
+  
+  }
+
+}
+</pre>
+</div>
+<p>This method (a so-called form handler) will be executed after the Employee record has been inserted into the database. There are more kind of handlers, to get a better insight into the mechanism, check the <a class="wikipage" href="/page/JavaBusinessLogic">business logics documentation</a>.
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>In general, makumba web-applications define one root Logic class which is then extended by all other Logic classes. This makes it possible to use the same methods in all Logic classes using inheritance.
+</p></div></div>
+</p>
+<span style="display:none;"><a class="wikipage" href="/page/CategoryQuickStart">Category QuickStart</a></span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on July 10 2010
+      
+    
+
+   <a class="feed" href="/rss_q994fafc5.jsp" title="RSS feed for page QuickStart"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

@@ -1,0 +1,577 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Input Tag
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/InputTag?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="InputTag" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_q9920bacd.jsp" rel="alternate" title="RSS wiki feed for page Makumba: InputTag." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item" href="/page/Usage">usage</a>
+<a class="menu_item active" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<ul class="MenuTreeRoot">
+<a href="/page/DataDefinitions"><li class="MenuTreeLeaf">data definitions</li></a>
+<a href="/page/ValidationRules"><li class="MenuTreeLeaf">validation rules</li></a>
+<a href="/page/QueryLanguages"><li class="MenuTreeLeaf">query languages</li></a>
+<a href="/page/QueryFragments"><li class="MenuTreeLeaf">query fragments</li></a>
+<a href="/page/Taglib"><li class="MenuTreeExpanded">JSP tag library</li></a>
+<ul class="MenuTree">
+<a href="/page/ActionTag"><li class="MenuTreeLeaf">mak:action</li></a>
+<a href="/page/AddFormTag"><li class="MenuTreeLeaf">mak:addForm</li></a>
+<a href="/page/AttributeTag"><li class="MenuTreeLeaf">mak:attribute</li></a>
+<a href="/page/CriterionTag"><li class="MenuTreeLeaf">mak:criterion</li></a>
+<a href="/page/DeleteTag"><li class="MenuTreeLeaf">mak:delete</li></a>
+<a href="/page/DeleteLinkTag"><li class="MenuTreeLeaf">mak:deleteLink</li></a>
+<a href="/page/EditFormTag"><li class="MenuTreeLeaf">mak:editForm</li></a>
+<a href="/page/FormTag"><li class="MenuTreeLeaf">mak:form</li></a>
+<a href="/page/IfTag"><li class="MenuTreeLeaf">mak:if</li></a>
+<a href="/page/InfoTag"><li class="MenuTreeLeaf">mak:info</li></a>
+<a class="MenuTreeSelected" href="/page/InputTag"><li class="MenuTreeLeafSelected">mak:input</li></a>
+<a href="/page/ListTag"><li class="MenuTreeLeaf">mak:list</li></a>
+<a href="/page/LoginTag"><li class="MenuTreeLeaf">mak:login</li></a>
+<a href="/page/LogoutTag"><li class="MenuTreeLeaf">mak:logout</li></a>
+<a href="/page/MatchModeTag"><li class="MenuTreeLeaf">mak:matchMode</li></a>
+<a href="/page/NewFormTag"><li class="MenuTreeLeaf">mak:newForm</li></a>
+<a href="/page/ObjectTag"><li class="MenuTreeLeaf">mak:object</li></a>
+<a href="/page/OptionTag"><li class="MenuTreeLeaf">mak:option</li></a>
+<a href="/page/PaginationTag"><li class="MenuTreeLeaf">mak:pagination</li></a>
+<a href="/page/ResponseTag"><li class="MenuTreeLeaf">mak:response</li></a>
+<a href="/page/ResultListTag"><li class="MenuTreeLeaf">mak:resultList</li></a>
+<a href="/page/SearchFieldTag"><li class="MenuTreeLeaf">mak:searchField</li></a>
+<a href="/page/SearchFormTag"><li class="MenuTreeLeaf">mak:searchForm</li></a>
+<a href="/page/SectionTag"><li class="MenuTreeLeaf">mak:section</li></a>
+<a href="/page/SubmitTag"><li class="MenuTreeLeaf">mak:submit</li></a>
+<a href="/page/ValueTag"><li class="MenuTreeLeaf">mak:value</li></a>
+<a href="/page/VersionTag"><li class="MenuTreeLeaf">mak:version</li></a>
+<a href="/page/CountFunction"><li class="MenuTreeLeaf">mak:count()</li></a>
+<a href="/page/HasValueChangedFunction"><li class="MenuTreeLeaf">mak:hasValueChanged()</li></a>
+<a href="/page/LastCountFunction"><li class="MenuTreeLeaf">mak:lastCount()</li></a>
+<a href="/page/LastCountByIdFunction"><li class="MenuTreeLeaf">mak:lastCountById()</li></a>
+<a href="/page/MaxCountFunction"><li class="MenuTreeLeaf">mak:maxCount()</li></a>
+<a href="/page/MaxResultsFunction"><li class="MenuTreeLeaf">mak:maxResults()</li></a>
+<a href="/page/NextCountFunction"><li class="MenuTreeLeaf">mak:nextCount()</li></a>
+<a href="/page/NextCountByIdFunction"><li class="MenuTreeLeaf">mak:nextCountById()</li></a>
+<a href="/page/ValueFunction"><li class="MenuTreeLeaf">mak:value()</li></a>
+<a href="/page/WillValueChangeFunction"><li class="MenuTreeLeaf">mak:willValueChange()</li></a>
+</ul>
+<a href="/page/RequestLifecycle"><li class="MenuTree">makumba request lifecycle</li></a>
+<a href="/api/org/makumba/package-summary.html"><li class="MenuTreeLeaf">API Documentation</li></a>
+<a href="/page/DeveloperDocumentation"><li class="MenuTree">developer documentation</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><span style="display:none"> makumba hackers: this page is generated, don't edit it! Instead edit the text in the included pages. </span>
+</p><h2 id="section-InputTag-TaglibDocumentationForTagMakInput">Taglib documentation for tag mak:input<a class="hashlink" href="#section-InputTag-TaglibDocumentationForTagMakInput">#</a></h2>
+<h3 id="section-InputTag-Description">Description<a class="hashlink" href="#section-InputTag-Description">#</a></h3>
+<p><div style="display: inline;"><p>An input field to be created, depending on the makumba type of the field.
+</p><p>Set and pointer inputs will render as select boxes. Sometimes you may need to use two select boxes whereby the user can move items from one box to the other, which is illustrated in this example.
+</p>
+<p>Date inputs are slightly different than normal inputs, as they are rendered with several input fields (for the day, month, year, hours, minutes and second, depending on the date/time format). Additionally, a JavaScript-based calendar widget can be used, as shown in an example.
+</p>
+<p>The difference between <span class="code">&lt;mak:input&gt;</span> and normal HTML <span class="code">&lt;input&gt;</span> in a makumba form are:
+</p>
+<ul><li>&lt;mak:input&gt; produces objects prepared for setting/comparing makumba fields (e.g. Pointer, Date, Text).
+</li><li>the fields produced by &lt;input&gt; will be available as page $attributes but will all be of type String
+</li><li>the fields produced by &lt;mak:input&gt; are available separately as a Dictionary to the handler method
+</li></ul></div><img alt="" class="outlink" src="/images/out.png"/>
+</p>
+<h3 id="section-InputTag-Attributes">Attributes<a class="hashlink" href="#section-InputTag-Attributes">#</a></h3>
+<table border="1" class="wikitable">
+<tr>
+<th>Name</th>
+<th>Required</th>
+<th>Runtime expression</th>
+<th>Description</th>
+<th>Comments </th>
+</tr>
+<tr>
+<td>field</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">Makumba field (from the edited record or via base pointers or sub-record pointers)
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Either name or field attribute mandatory
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>name</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">Makumba field (from the edited record or via base pointers or sub-record pointers)
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Either name or field attribute mandatory
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>value</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">MQL expression relative to enclosing query tags or a $attribute computed previously in the page (with &lt;mak:value var=.../&gt;, pageContext.setAttribute(...), or read by in the previous page by an &lt;mak:input /&gt;)
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;"><p></p></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>default</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">FIXME
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;"><p></p></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>empty</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">FIXME
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;"><p></p></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>dataType</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">The makumba type of the data (needed if there is no value, no default expression for the value, or no makumba type associated with an attribute)
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Can be char, char[xx], int, date, text, ptr Type, set Type
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>display</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">If "false", it will not show the &lt;input&gt; but it will expect to read it in the next page. This allows the page designer to format the input control manually
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;"><p></p></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>format</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">Format string, according to java.text.SimpleDateFormat Can only countain d, M, y, H, m, s formatting chars, and any kind of separators. Ex: 'the day' dd 'of the month' MMMM 'in the year' yyyy. Default is "dd MMMM yyyy"
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Only for date.
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>type</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">HTML INPUT type to be used 
+<ul><li>"hidden" works for all fields 
+</li><li>for char<u></u>, type can be "text" or "password", default is "text" 
+</li><li>default type for [set]intEnum, [set]charEnum, ptr and set is "select" (dropdown or scroll list depending on size). Alternative is "tickbox" (checkboxes or radio buttons). Can be forced to a specific type by using "radio" or "checkbox" 
+</li><li>for set, type can be seteditor, which will create two multiple-select boxes (see an example). 
+</li><li>for int, spinner creates a spinner input with increase/decrease buttons; if a validation definition defines a range for the field, select and radio will create select boxes and radio buttons. 
+</li><li>date is split in 3 inputs, &lt;fieldname&gt;_0 (day), _1 (month), _2 (year), and likewise for time elements 
+</li><li>for text, default is "textarea"; "file" will create file upload box, and will create supplementary attributes &lt;fieldname&gt;_filename, &lt;fieldname&gt;_contentType and &lt;fieldname&gt;_contentLength that have to be handled separately by the handler method
+</li><li>for file, a file upload box will automatically created, and handling of file name, content type and length will be done automatically.
+</li></ul></div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;"><p></p></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>stepSize</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">For int data with type select or radio, the step size defines the steps between each option. The default stepsize is 1.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Only for int with type=select/radio.
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>calendarEditor</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">Whether to generate code for a calendar editor.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Only for date types. Defaults to <span class="code">true </span> resp. the default value specified in the Makumba configuration.
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>calendarEditorLink</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">The formatting that appears on the link to the calendar date-chooser.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Only for date types. Defaults to &lt;img border="0" src="_CONTEXT_PATH_/mak-tools/makumbaResources/image/calendar.gif"&gt;
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>autoComplete</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">Enables auto-completion
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Works only for char<u></u> and ptr.
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>size</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Size of the input control
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Only for char<u></u>, int (size of the textbox) and set, ptr (height of the select)
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Max length of a text control
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Only for char<u></u> and int. Defaults to makumba width of the char<u></u>
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>rows</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Number of textarea rows and columns
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">only for text
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>cols</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Number of textarea rows and columns
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">only for text
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>nameVar</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">The name of the java variable in which to store the name of the HTML input. In multiple forms, there may be more HTML inputs generated by one mak:input, so a suffix is added by makumba to the name to generate unique names for each.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;"><p></p></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>nullOption</td>
+<td>false</td>
+<td>false</td>
+<td><div style="display: inline;">A text that would be displayed as the "null option" in drop-down boxes, i.e. to add a null value to the other possible options. May be used to allow a ptr to be set to null, and/or require a deliberate action from the users to select a value, rather leaving the default (first) value selected.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Only for <span class="code">ptr </span> and <span class="code">intEnum </span> types
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>labelSeparator</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">The string that separates the tickbox (radio/check) from the label. Default is " " (space). The output will be &lt; tick &gt;&lt; labelSeparator &gt;&lt; label &gt;
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Only for <span class="code">type="tickbox"
+</span></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>elementSeparator</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">The string that separates the different options. Default is " " (space). The output will be &lt; [x] label &gt;&lt; elementSeparator &gt;&lt; [x] label &gt;
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">Only for <span class="code">type="tickbox"
+</span></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>clearDefault</td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Enable this to hide the default text of an input onFocus and display it again onBlur if nothing has been entered.
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;"><p></p></div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>accessKey</td>
+<td>false</td>
+<td>true</td>
+<td rowspan="7"><div style="display: inline;">Input-specific HTML tag attribute
+</div> (generic)</td>
+<td rowspan="7"><div style="display: inline;">The content is copied to the resulting &lt;input...&gt; tag. Careful with (escaping) quotes.
+</div> (generic) 
+</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onChange</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onBlur</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onFocus</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onSelect</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>tabIndex</td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>styleClass<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td><div style="display: inline;">Generic HTML tag attribute
+</div><img alt="" class="outlink" src="/images/out.png"/></td>
+<td><div style="display: inline;">results in class="..."
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</td>
+</tr>
+<tr>
+<td>style<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+<td rowspan="12"><div style="display: inline;">Generic HTML tag attribute
+</div> (generic)</td>
+<td rowspan="12"><div style="display: inline;">The content is copied to the resulting html tag. Careful with (escaping) quotes.
+</div> (generic) 
+</td>
+</tr>
+<tr>
+<td>title<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onClick<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onDblClick<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onKeyDown<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onKeyUp<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onKeyPress<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseDown<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseUp<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseMove<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseOut<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+<tr>
+<td>onMouseOver<br/> <span style="font-size:smaller;"> (from <a class="wikipage" href="/page/FormTag">mak:form</a>)</span></td>
+<td>false</td>
+<td>true</td>
+</tr>
+</table>
+<h3 id="section-InputTag-SeeAlso">See also<a class="hashlink" href="#section-InputTag-SeeAlso">#</a></h3>
+<p><a class="wikipage" href="/page/FormTag">mak:form</a>, <a class="wikipage" href="/page/NewFormTag">mak:newForm</a>, <a class="wikipage" href="/page/AddFormTag">mak:addForm</a>, <a class="wikipage" href="/page/EditFormTag">mak:editForm</a>, <a class="wikipage" href="/page/DeleteLinkTag">mak:deleteLink</a>, <a class="wikipage" href="/page/DeleteTag">mak:delete</a>
+<h3 id="section-InputTag-Examples">Examples<a class="hashlink" href="#section-InputTag-Examples">#</a></h3>
+</p>
+<p><div style="display: inline;"><div class="prettify">
+<pre>
+&lt;mak:object from="company.Employee e" where="e=$employee"&gt;
+    &lt;mak:editForm object="e" action="employeeView.jsp" method="post"&gt;
+        Name      &lt;mak:input name="name"/&gt;
+        Surname   &lt;mak:input name="surname"/&gt;
+        Gender    &lt;mak:input name="gender" type="tickbox" /&gt;
+        DOB       &lt;mak:input name="birthdate" format="yyyy-MM-dd" /&gt;
+        Projects  &lt;mak:input name="projects" type="seteditor"/&gt;
+    &lt;/mak:editForm&gt;
+&lt;/mak:object&gt;
+</pre></div>
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</p>
+<p></p>
+<span style="display:none;"> <a class="wikipage" href="/page/CategoryDocumentation">Category Documentation</a></span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on August 1 2010
+      
+    
+
+   <a class="feed" href="/rss_q9920bacd.jsp" title="RSS feed for page InputTag"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

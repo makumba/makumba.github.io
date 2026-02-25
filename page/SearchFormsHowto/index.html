@@ -1,0 +1,282 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Search Forms Howto
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/SearchFormsHowto?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="SearchFormsHowto" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_q3dda6258.jsp" rel="alternate" title="RSS wiki feed for page Makumba: SearchFormsHowto." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item active" href="/page/Usage">usage</a>
+<a class="menu_item" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<ul class="MenuTreeRoot">
+<a href="/page/MakumbaManifesto"><li class="MenuTreeLeaf">makumba manifesto</li></a>
+<a href="/page/DataModelHowto"><li class="MenuTreeLeaf">defining the data model</li></a>
+<a href="/page/DisplayingDataHowto"><li class="MenuTreeLeaf">displaying data</li></a>
+<a href="/page/CreatingEditingHowto"><li class="MenuTreeLeaf">creating and editing data</li></a>
+<a href="/page/MultipleListsAndFormsHowto"><li class="MenuTreeLeaf">multiple lists and forms</li></a>
+<a href="/page/MakumbaAPIHowto"><li class="MenuTreeLeaf">makumba API</li></a>
+<a href="/page/Web20HowTo"><li class="MenuTreeLeaf">web 2.0 features</li></a>
+<a href="/page/AdvancedFeaturesHowto"><li class="MenuTreeLeaf">advanced features</li></a>
+<a class="MenuTreeSelected" href="/page/SearchFormsHowto"><li class="MenuTreeLeafSelected">search forms</li></a>
+<a href="/page/MDDFunctionsHowto"><li class="MenuTreeLeaf">MDD functions</li></a>
+<a href="/page/AuthenticationAuthorizationHowto"><li class="MenuTreeLeaf">access control</li></a>
+<a href="/page/LayoutHowto"><li class="MenuTreeLeaf">layout &amp; navigation</li></a>
+<a href="/page/DeveloperToolsHowTo"><li class="MenuTreeLeaf">developer tools</li></a>
+<a href="/page/Plugin"><li class="MenuTreeLeaf">eclipse plugin</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><div class="toc">
+<div class="collapsebox">
+<h4 id="section-TOC">Table of Contents</h4>
+<ul>
+<li class="toclevel-1"><a class="wikipage" href="/page/SearchFormsHowto#section-SearchFormsHowto-Introduction">Introduction</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/SearchFormsHowto#section-SearchFormsHowto-SearchForms">Search Forms</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/SearchFormsHowto#section-SearchFormsHowto-TheFormStub">The form stub</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/SearchFormsHowto#section-SearchFormsHowto-SearchCriteria">Search criteria</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/SearchFormsHowto#section-SearchFormsHowto-InputControlRendering">Input control rendering</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/SearchFormsHowto#section-SearchFormsHowto-RangeSearches">Range searches</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/SearchFormsHowto#section-SearchFormsHowto-ModifyingPatternMatching">Modifying pattern matching</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/SearchFormsHowto#section-SearchFormsHowto-DisplayingSearchResults">Displaying Search Results</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/SearchFormsHowto#section-SearchFormsHowto-AdvancedResultDisplay">Advanced result display</a></li>
+</ul>
+</div>
+</div>
+</p><h2 id="section-SearchFormsHowto-Introduction">Introduction<a class="hashlink" href="#section-SearchFormsHowto-Introduction">#</a></h2>
+Search forms provide an easy way to perform searches on data in your application's database. There are two steps
+<ul><li>composing the search form
+</li><li>displaying the search results
+</li></ul><h2 id="section-SearchFormsHowto-SearchForms">Search Forms<a class="hashlink" href="#section-SearchFormsHowto-SearchForms">#</a></h2>
+Makumba search forms build on the familiar concepts of other Makumba forms, such as the <a class="wikipage" href="/page/NewFormTag">&lt;mak:newForm&gt;</a>, and help you to rapidly build your input mask. 
+First, you need to specify the <a class="wikipage" href="/page/DataDefinitions">data definition</a> you want to search in, and specify a name identifier, to which you can refer to in your result display page.
+<h3 id="section-SearchFormsHowto-TheFormStub">The form stub<a class="hashlink" href="#section-SearchFormsHowto-TheFormStub">#</a></h3>
+<div class="prettify">
+<pre>
+&lt;mak:searchForm in="company.Employee" name="searchEmployee"&gt;
+  ....
+&lt;/mak:searchForm&gt;
+</pre></div>
+<p>This just provides the stub of the form, to actually have the user select options or input search terms, you have to provide search criteria on which field(s) to search on:
+</p>
+<h3 id="section-SearchFormsHowto-SearchCriteria">Search criteria<a class="hashlink" href="#section-SearchFormsHowto-SearchCriteria">#</a></h3>
+<div class="prettify">
+<pre>
+&lt;mak:searchForm in="company.Employee" name="searchPerson"&gt;
+  &lt;mak:criterion fields="name"&gt; ... &lt;/mak:criterion&gt;
+  &lt;mak:criterion fields="projects"&gt; ... &lt;/mak:criterion&gt;  
+&lt;/mak:searchForm&gt;
+</pre></div>
+<p>This tells Makumba that you want to search for an Employee, and as a criterion you want to use the <span class="Code">name</span> field.
+</p>
+<h3 id="section-SearchFormsHowto-InputControlRendering">Input control rendering<a class="hashlink" href="#section-SearchFormsHowto-InputControlRendering">#</a></h3>
+Finally, you need to tell Makumba how you want to render the input control, so let's extend the example a bit further:
+<div class="prettify">
+<pre>
+&lt;mak:searchForm in="company.Employee" name="searchEmployee"&gt;
+  &lt;mak:criterion fields="name"&gt; &lt;mak:searchField /&gt; &lt;/mak:criterion&gt;
+  &lt;mak:criterion fields="projects"&gt; &lt;mak:searchField forceInputStyle="single" /&gt; &lt;/mak:criterion&gt;  
+&lt;/mak:searchForm&gt;
+</pre></div>
+<p>This tells Makumba that we want a standard input control for the name, and from the given <a class="wikipage" href="/page/DataDefinitions">data definition</a>, it will render a <span class="Code">input box</span>. For the projects criterion, which is a <span class="Code">set</span>, Makumba would normally create a multiple-select box. However in this case, we want to select only one project, and thus we can force the input style to be a 'single' select. 
+</p>
+<p>The <a class="wikipage" href="/page/SearchFieldTag">&lt;mak:searchField&gt;</a> builds on top of the <a class="wikipage" href="/page/InputTag">&lt;mak:input</a>, and accepts the attributes defined there. For more details on this, please see the <a class="wikipage" href="/page/SearchFieldTag">&lt;mak:searchField</a> documentation.
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>In the future, a &lt;mak:criterion .. /&gt; without a body might by default behave like having a single, empty &lt;mak:searchField/&gt; inside, and thus help you to make standard search forms even faster. 
+</p></div></div>
+</p>
+<p></p>
+<h3 id="section-SearchFormsHowto-RangeSearches">Range searches<a class="hashlink" href="#section-SearchFormsHowto-RangeSearches">#</a></h3>
+For certain input types (namely int, real and date) you can do range searches, i.e. provide a lower and upper bound in between which the value should match.
+<p>You can enable a range search by specifying this in the <a class="wikipage" href="/page/CriterionTag">&lt;mak:criterion&gt;</a> tag, and by providing two <a class="wikipage" href="/page/SearchFieldTag">&lt;mak:searchField&gt;</a>, one for the beginning, and one for the end of the range.
+</p>
+<p>To search e.g. for the birthday of employees, you would build a form as:
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:searchForm in="company.Employee" name="searchEmployee"&gt;
+  &lt;mak:criterion fields="birthdate" isRange="true"&gt;
+    between &lt;mak:searchField /&gt; and &lt;mak:searchField role="rangeEnd" /&gt; 
+  &lt;/mak:criterion&gt;
+&lt;/mak:criterion&gt;  
+&lt;/mak:searchForm&gt;
+</pre></div>
+<p></p>
+<h3 id="section-SearchFormsHowto-ModifyingPatternMatching">Modifying pattern matching<a class="hashlink" href="#section-SearchFormsHowto-ModifyingPatternMatching">#</a></h3>
+By default, Makumba will evaluate your search terms or search option selections as an exact equality match with the values in the database. For range matches, such as date or number ranges, the default match is "between inclusive", i.e. the comparison is true if the search value is in between the range boundaries, or equal to one of them.
+<p>You may want to modify this behaviour, which can be done by providing a <span class="Code">matchMode</span> attribute to the <a class="wikipage" href="/page/CriterionTag">&lt;mak:criterion&gt;</a>, e.g.:
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:searchForm in="company.Employee" name="searchEmployee"&gt;
+  &lt;mak:criterion fields="name" matchMode="contains"&gt; &lt;mak:searchField /&gt; &lt;/mak:criterion&gt;
+&lt;/mak:searchForm&gt;
+</pre></div>
+<p>This will change the matching to any name that <i>contains</i> the search term.
+</p>
+<p>If you want to let the user decide on how to do the matching, you can provide another input control by using <a class="wikipage" href="/page/MatchModeTag">&lt;mak:matchMode&gt;</a>:
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:searchForm in="company.Employee" name="searchEmployee"&gt;
+  &lt;mak:criterion fields="name"&gt; &lt;mak:matchMode matchModes="contains, equals, begins, ends"&gt; &lt;mak:searchField /&gt; &lt;/mak:criterion&gt;
+&lt;/mak:searchForm&gt;
+</pre></div>
+<p>This will show an input control that lets the user chose between the different matching modes. For the complete list of available attribute values, please refer to the <a class="wikipage" href="/page/MatchModeTag">&lt;mak:matchMode&gt;</a> documentation.
+<h2 id="section-SearchFormsHowto-DisplayingSearchResults">Displaying Search Results<a class="hashlink" href="#section-SearchFormsHowto-DisplayingSearchResults">#</a></h2>
+</p>
+<p>Displaying results from the search is in principle equal to displaying results from any other database query. Thus, displaying results from a search form builds on the <a class="wikipage" href="/page/ListTag">&lt;mak:list&gt;</a> concept. The <a class="wikipage" href="/page/ResultListTag">&lt;mak:resultList&gt;</a> will automatically iterate over the results from a specified search form. Contrary to the &lt;mak:list&gt;, you do not need to provide a <span class="Code">from</span> and <span class="Code">where</span> section, but just specify the name of the search form to take the results from with the <span class="Code">resultsFrom</span> attribute.
+</p>
+<p>The name of the object selected in the list is fixed to 'o', sub-sets get selected as 'o_subFieldName':
+</p>
+<div class="prettify">
+<pre>
+&lt;mak:resultList resultsFrom="searchEmployee"&gt;
+  Name: &lt;mak:value expr="o.name"/&gt; &lt;br/&gt;
+&lt;/mak:resultList&gt;
+</pre></div>
+<h3 id="section-SearchFormsHowto-AdvancedResultDisplay">Advanced result display<a class="hashlink" href="#section-SearchFormsHowto-AdvancedResultDisplay">#</a></h3>
+<p>When a search form is submitted, Makumba will respond with creating several <a class="wikipage" href="/page/MakumbaAttributes">attributes</a>. If you want to do more advanced things in the search page, e.g. sorting of the parameters, you might need to access the pageContext attributes describing the search and the results. They are as follows:
+</p>
+<p></p>
+<table border="1" class="wikitable"><tr class="odd"><th> Attribute name </th><th> description</th></tr>
+<tr><td> &lt;searchFormName&gt;Done </td><td> Boolean, saying whether a search was performed (or this is the first time accessing the form). Can be used e.g. as <span class="Code">&lt;c:if test="${&lt;searchFormName&gt;Done}"/&gt; Do something when the search was done &lt;/c:if&gt;</span></td></tr>
+<tr class="odd"><td> &lt;searchFormName&gt;QueryString </td><td> The query string containing the values for the form fields filled in in the search. Use this e.g. as <span class="Code">&lt;a href="searchPage.jsp?${&lt;searchFormName&gt;QueryString}&amp;sortBy=name"&gt;</span> when you want to provide sorting by a specific field.</td></tr>
+<tr><td> &lt;searchFormName&gt;VariableFrom </td><td> The additional data definitions needed to perform the query, will be used by mak:resultList in the variableFrom=".." attribute.</td></tr>
+<tr class="odd"><td> &lt;searchFormName&gt;Where </td><td> The filter conditions for the matching records, will be used by mak:resultList in the where=".." attribute.</td></tr>
+</table><p></p>
+<span style="display:none;"><a class="wikipage" href="/page/CategoryUsage">Category Usage</a></span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on February 27 2011
+      
+    
+
+   <a class="feed" href="/rss_q3dda6258.jsp" title="RSS feed for page SearchFormsHowto"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

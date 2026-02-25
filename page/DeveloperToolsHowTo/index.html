@@ -1,0 +1,223 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Developer Tools How To
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/DeveloperToolsHowTo?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="DeveloperToolsHowTo" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_qc7858854.jsp" rel="alternate" title="RSS wiki feed for page Makumba: DeveloperToolsHowTo." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item active" href="/page/Usage">usage</a>
+<a class="menu_item" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<ul class="MenuTreeRoot">
+<a href="/page/MakumbaManifesto"><li class="MenuTreeLeaf">makumba manifesto</li></a>
+<a href="/page/DataModelHowto"><li class="MenuTreeLeaf">defining the data model</li></a>
+<a href="/page/DisplayingDataHowto"><li class="MenuTreeLeaf">displaying data</li></a>
+<a href="/page/CreatingEditingHowto"><li class="MenuTreeLeaf">creating and editing data</li></a>
+<a href="/page/MultipleListsAndFormsHowto"><li class="MenuTreeLeaf">multiple lists and forms</li></a>
+<a href="/page/MakumbaAPIHowto"><li class="MenuTreeLeaf">makumba API</li></a>
+<a href="/page/Web20HowTo"><li class="MenuTreeLeaf">web 2.0 features</li></a>
+<a href="/page/AdvancedFeaturesHowto"><li class="MenuTreeLeaf">advanced features</li></a>
+<a href="/page/SearchFormsHowto"><li class="MenuTreeLeaf">search forms</li></a>
+<a href="/page/MDDFunctionsHowto"><li class="MenuTreeLeaf">MDD functions</li></a>
+<a href="/page/AuthenticationAuthorizationHowto"><li class="MenuTreeLeaf">access control</li></a>
+<a href="/page/LayoutHowto"><li class="MenuTreeLeaf">layout &amp; navigation</li></a>
+<a class="MenuTreeSelected" href="/page/DeveloperToolsHowTo"><li class="MenuTreeLeafSelected">developer tools</li></a>
+<a href="/page/Plugin"><li class="MenuTreeLeaf">eclipse plugin</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><div class="toc">
+<div class="collapsebox">
+<h4 id="section-TOC">Table of Contents</h4>
+<ul>
+<li class="toclevel-1"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-CodeViewers">Code Viewers</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-JSPViewer">JSP Viewer</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-DataDefinitionViewer">Data Definition Viewer</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-JavaViewer">Java Viewer</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-CodeGenerator">Code Generator</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-DataTools">Data Tools</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-DataQueryTool">Data Query Tool</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-ObjectViewer">Object Viewer</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-DataLister">Data Lister</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-PointerValueConverter">Pointer Value Converter</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-ReferenceChecker">Reference Checker</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/DeveloperToolsHowTo#section-DeveloperToolsHowTo-ErrorLogViewer">Error Log Viewer</a></li>
+</ul>
+</div>
+</div>
+</p><p>Makumba comes with a number of convenient developer tools.
+Those tools can be enabled or disabled at will (one might not want e.g. the data query tool to be enabled in a production environment) in the <a class="wikipage" href="/page/MakumbaConfiguration#section-MakumbaConfiguration-SectionMakumbaConfigurationMakumbaTools">configuration</a> file. The default location is under /mak-tools but this can be also changed if wished.<br/>
+In addition to the list below, more tools are expected to be developed in the future, allowing e.g. to clean up database columns not used anymore or to migrate the data when doing data structure refactoring (e.g. when moving from a pointer to set). 
+</p>
+<p></p>
+<h2 id="section-DeveloperToolsHowTo-CodeViewers"> Code Viewers<a class="hashlink" href="#section-DeveloperToolsHowTo-CodeViewers">#</a></h2>
+<h3 id="section-DeveloperToolsHowTo-JSPViewer"> JSP Viewer<a class="hashlink" href="#section-DeveloperToolsHowTo-JSPViewer">#</a></h3>
+The JSP code viewer comes with handy highlighting of JSP, JSTL and of course Makumba tags. It also provides convenient links to the data definitions used in the page, to the logic discovery (identifying matching business logic files) as well as to the version history of this particular file.<br/>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>By default the JSP viewer can be accessed by using the .jspx extension on any JSP page
+</p></div></div>
+</p>
+<h3 id="section-DeveloperToolsHowTo-DataDefinitionViewer"> Data Definition Viewer<a class="hashlink" href="#section-DeveloperToolsHowTo-DataDefinitionViewer">#</a></h3>
+The data definition viewer allows to easily check the fields available in a given entity and the history of the changes. When a data definition contains references to other entities, links to the corresponding data definitions are provided, making it very easy to navigate from an entity to the other.
+When adding new data definitions, the data definition viewer also indicates syntax errors, if any, making it easy to spot and correct any issue.<br/>
+The data definition viewer is also able to provide the list of JSP and Java files in which the entity is used, which comes handy when assessing the impact of a data structure change. For this list of relations to be available, one needs however to run the relation crawler first (located by default under /mak-tools/relationCrawler). 
+<p><div class="note"><div class="label">Note</div><div class="content"><p>It is most common to access the data definition viewer from the JSP viewer, but it can also be accessed from (default) /mak-tools/dataDefinitions/ 
+</p></div></div>
+</p>
+<h3 id="section-DeveloperToolsHowTo-JavaViewer"> Java Viewer<a class="hashlink" href="#section-DeveloperToolsHowTo-JavaViewer">#</a></h3>
+The java viewer comes with handy highlighting and links to the classes, methods and data definitions used. As for the JSP and MDD viewers, the version history is only one click away.
+<p><div class="note"><div class="label">Note</div><div class="content"><p>It is most common to access the java viewer from the JSP viewer and its logic discovery, but it can also be accessed from (default) /mak-tools/classes/ 
+</p></div></div>
+</p>
+<h2 id="section-DeveloperToolsHowTo-CodeGenerator"> Code Generator<a class="hashlink" href="#section-DeveloperToolsHowTo-CodeGenerator">#</a></h2>
+<p>For quick prototyping, code can be automatically generated from the data definitions. The code generator is available (when enabled) from the data definition viewer and will generate the code for creation, view, list, edition and deletion of the entity. Templates can be defined to refine the output.
+</p>
+<h2 id="section-DeveloperToolsHowTo-DataTools"> Data Tools <a class="hashlink" href="#section-DeveloperToolsHowTo-DataTools">#</a></h2>
+<h3 id="section-DeveloperToolsHowTo-DataQueryTool"> Data Query Tool<a class="hashlink" href="#section-DeveloperToolsHowTo-DataQueryTool">#</a></h3>
+The data query tool allows the developer to run any SELECT queries using MQL (Makumba Query Language) or HQL (Hibernate Query Language). It dramatically eases the checking of the data contained in the DB, especially when joining across several tables is involved.<br/>
+Besides the actual output of the query, the corresponding SQL is also given.
+<h3 id="section-DeveloperToolsHowTo-ObjectViewer"> Object Viewer<a class="hashlink" href="#section-DeveloperToolsHowTo-ObjectViewer">#</a></h3>
+The object viewer returns, for a given object (e.g. result of the data query tool), the values of all its fields. 
+<h3 id="section-DeveloperToolsHowTo-DataLister"> Data Lister<a class="hashlink" href="#section-DeveloperToolsHowTo-DataLister">#</a></h3>
+The data lister returns the data from a given entity.
+<h3 id="section-DeveloperToolsHowTo-PointerValueConverter"> Pointer Value Converter<a class="hashlink" href="#section-DeveloperToolsHowTo-PointerValueConverter">#</a></h3>
+Makumba refers primarily to objects using their so called internal form (DBSV:UID) and external form (7 alphanumeric characters) pointers. A record has also a third ID, namely its actual database value. The pointer value converter provides the translation between those 3 identifiers.
+<h3 id="section-DeveloperToolsHowTo-ReferenceChecker"> Reference Checker<a class="hashlink" href="#section-DeveloperToolsHowTo-ReferenceChecker">#</a></h3>
+The reference checker looks at foreign and unique keys and displays broken references.
+<h3 id="section-DeveloperToolsHowTo-ErrorLogViewer"> Error Log Viewer<a class="hashlink" href="#section-DeveloperToolsHowTo-ErrorLogViewer">#</a></h3>
+If the error logging to the database is activated (see the <a class="wikipage" href="/page/Configuration#section-Configuration-MakumbaConfigurationMakumbaToolsConfigurationMakumbaToolConfig">configuration</a>), you can use this tool in order to display the error log and get an idea of what errors the users of your application see.
+<span style="display:none;"><a class="wikipage" href="/page/CategoryUsage">Category Usage</a></span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on July 10 2010
+      
+    
+
+   <a class="feed" href="/rss_qc7858854.jsp" title="RSS feed for page DeveloperToolsHowTo"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

@@ -1,0 +1,373 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Validation Rules
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/ValidationRules?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="ValidationRules" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_q5d25d2f0.jsp" rel="alternate" title="RSS wiki feed for page Makumba: ValidationRules." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item" href="/page/Usage">usage</a>
+<a class="menu_item active" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<ul class="MenuTreeRoot">
+<a href="/page/DataDefinitions"><li class="MenuTreeLeaf">data definitions</li></a>
+<a class="MenuTreeSelected" href="/page/ValidationRules"><li class="MenuTreeLeafSelected">validation rules</li></a>
+<a href="/page/QueryLanguages"><li class="MenuTreeLeaf">query languages</li></a>
+<a href="/page/QueryFragments"><li class="MenuTreeLeaf">query fragments</li></a>
+<a href="/page/Taglib"><li class="MenuTree">JSP tag library</li></a>
+<a href="/page/RequestLifecycle"><li class="MenuTree">makumba request lifecycle</li></a>
+<a href="/api/org/makumba/package-summary.html"><li class="MenuTreeLeaf">API Documentation</li></a>
+<a href="/page/DeveloperDocumentation"><li class="MenuTree">developer documentation</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><div class="toc">
+<div class="collapsebox">
+<h4 id="section-TOC">Table of Contents</h4>
+<ul>
+<li class="toclevel-1"><a class="wikipage" href="/page/ValidationRules#section-ValidationRules-Overview">Overview</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/ValidationRules#section-ValidationRules-ValidationRuleTypes">Validation rule types</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/ValidationRules#section-ValidationRules-NumberRangeRule">Number range rule</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/ValidationRules#section-ValidationRules-StringLengthRule">String length rule</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/ValidationRules#section-ValidationRules-RegularExpressionRule">Regular expression rule</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/ValidationRules#section-ValidationRules-ComparisonRule">Comparison rule</a></li>
+<li class="toclevel-2"><a class="wikipage" href="/page/ValidationRules#section-ValidationRules-MultiFieldUniquenessDefinition">Multi-field uniqueness definition</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/ValidationRules#section-ValidationRules-ErrorMessage">Error message</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/ValidationRules#section-ValidationRules-ImplicitValidationRules">Implicit validation rules</a></li>
+</ul>
+</div>
+</div>
+<br/>
+</p><h2 id="section-ValidationRules-Overview">Overview<a class="hashlink" href="#section-ValidationRules-Overview">#</a></h2>
+Validation rules are defined inside a data definition, and allow Makumba to automatically validated form data input.
+<p>The general syntax of a validation rule definition is as follows:
+</p>
+<div class="prettify">
+<pre>
+ruleType(arg1, arg2, ...) { rule definition } : "error message"
+</pre></div>
+<h2 id="section-ValidationRules-ValidationRuleTypes">Validation rule types<a class="hashlink" href="#section-ValidationRules-ValidationRuleTypes">#</a></h2>
+<p>There are different kind of validation rules, each with a specific name:
+</p>
+<ul><li>number range (<i>range</i>)
+</li><li>string length (<i>length</i>)
+</li><li>regular expression (<i>matches</i>)
+</li><li>comparison (<i>compare</i>)
+</li><li>uniqueness (<i>unique</i>)
+</li></ul><p>The arguments depend on the type, as we'll see later.
+</p>
+<h3 id="section-ValidationRules-NumberRangeRule">Number range rule<a class="hashlink" href="#section-ValidationRules-NumberRangeRule">#</a></h3>
+<p>The range definition rule applies for <tt>Number</tt> types, i.e. <tt>int</tt> and <tt>real</tt>. The validation rule is defined as:
+</p>
+<div class="prettify">
+<pre>
+range(fieldName) { 1..10 }
+</pre></div>
+<p>Using ? allows to keep one parameter unbound, which will default to java.lang.Integer.MIN_VALUE and java.lang.Integer.MAX_VALUE, respectively, i.e. +/- 2<span class="sup">31</span>-1.
+    
+To require that the age needs to be between 12 and 99:
+</p>
+<div class="prettify">
+<pre>
+range(age) { 12..99 } : "Age must be between 12 and 99!"
+</pre></div>
+To define that we need to be at least 5 year old, but without any upper limit:
+<div class="prettify">
+<pre>
+range(age) {5..? } : "Age must be at least 5!"
+</pre></div>
+<h3 id="section-ValidationRules-StringLengthRule">String length rule<a class="hashlink" href="#section-ValidationRules-StringLengthRule">#</a></h3>
+<p>The length definition rule is very similar to the range definition, but applies for <tt>string</tt> types, i.e. <tt>char</tt> and <tt>text</tt>. The validation rule is defined as:
+</p>
+<div class="prettify">
+<pre>
+length(fieldName) { 1..10 }
+</pre></div>   
+Using ? allows to keep one parameter unbound, which will default to a minimum length of 0 and a maxium length of 255
+<p>To define that the CV needs to be at least 100 characters, define:
+</p>
+<div class="prettify">
+<pre>
+length(cv) { 100..? } : "CV must be of decent length!"
+</pre></div>
+<h3 id="section-ValidationRules-RegularExpressionRule">Regular expression rule<a class="hashlink" href="#section-ValidationRules-RegularExpressionRule">#</a></h3>
+<p>The string regular expression rule applies for <tt>string</tt> types, primarily for <tt>char</tt>, but also for <tt>text</tt>. The validation rule is defined as:
+</p>
+<div class="prettify">
+<pre>
+matches(fieldName) { regular expression }
+</pre></div>
+Regular expressions must be valid regu    lar expressions in Java, for more details please refer to the <a class="external" href="http://java.sun.com/j2se/1.4.2/docs/api/java/util/regex/Pattern.html">specification</a><img alt="" class="outlink" src="/images/out.png"/> and <a class="external" href="http://java.sun.com/docs/books/tutorial/essential/regex/">tutorial</a><img alt="" class="outlink" src="/images/out.png"/>.
+<p>To compare if a field contains a valid e-mail address, define:
+</p>
+<div class="prettify">
+<pre>
+matches(email) { .+@.+\.[a-z\.]+ } : "Email address is not valid!"
+</pre></div>
+<h3 id="section-ValidationRules-ComparisonRule">Comparison rule<a class="hashlink" href="#section-ValidationRules-ComparisonRule">#</a></h3>
+<p>This rule allows to compare a field to a constant value or simple function calls.
+</p>
+<p>The following constants are currently available:
+<table border="1" class="wikitable">
+<tr>
+<th>Constants 	</th>
+<th>Description 	</th>
+<th>Valid</th>
+</tr>
+<tr>
+<td>$now 	</td>
+<td>The current date and time. 	</td>
+<td rowspan="2">date types</td>
+</tr>
+<tr>
+<td>$today 	</td>
+<td>The current date, time set to 00:00.</td>
+</tr>
+</table>
+</p>
+<p>The following functions are currently available:
+<table border="1" class="wikitable">
+<tr>
+<th>Function 	</th>
+<th>Description 	</th>
+<th>Valid</th>
+</tr>
+<tr>
+<td>$date(.., .., .., .., .., ..)</td>
+<td>Constructs a date.<br/>
+The function takes up to six arguments, for day, month, year, hours, minutes and seconds. If less than six arguments are passed, the missing values will be automatically set to the current date.<br/>
+$now is available as a constant for the current date value, and + and - operators can be used to modify that value. e.g. <tt>date($now,$now,$now - 5)</tt> evaluates as the current date 5 years ago.</td>
+<td><tt>date</tt> types
+</td>
+</tr>
+<tr>
+<td>lower(..) </td>
+<td>Converts a string to lower case. </td>
+<td rowspan="2"><tt>String</tt>, i.e. 'char' and 'text' types</td>
+</tr>
+<tr>
+<td>upper(..) </td>
+<td>Converts a string to upper case.</td>
+</tr>
+</table>
+</p>
+<p>Valid comparison operators are the ones defined in Java:
+<table border="1" class="wikitable">
+<tr>
+<th>Operator </th>
+<th>Meaning</th>
+</tr>
+<tr>
+<td>== </td>
+<td>equal</td>
+</tr>
+<tr>
+<td><h4 id="section-ValidationRules-">= <a class="hashlink" href="#section-ValidationRules-">#</a></h4></td>
+<td>not equal</td>
+</tr>
+<tr>
+<td>\&lt; </td>
+<td>less than</td>
+</tr>
+<tr>
+<td>\&gt; </td>
+<td>greater than</td>
+</tr>
+<tr>
+<td>=\&lt; </td>
+<td>less than or equal</td>
+</tr>
+<tr>
+<td>\&gt;= </td>
+<td>greater than or equal</td>
+</tr>
+</table>
+</p>
+<p>To compare if someone is at least 15 years old, define the following validation rule:
+</p>
+<div class="prettify">
+<pre>
+compare(birthdate) { birthdate &gt;= date($now,$now,$now - 15) } : "You have to be at least 15 years old!"
+</pre></div>
+<p>To ensure that a field doesn't contain only lower-case values, define this rule:
+</p>
+<div class="prettify">
+<pre>
+compare(name) { lower(name) != name } : "Your name must not contain only lower-case letters!"
+</pre></div>
+Two fields can be compared in a similar way
+<div class="prettify">
+<pre>
+compare(birthdate, graduationDate) { birthdate &lt; graduationDate } : "You cannot finish school before your birthdate!"
+</pre></div>
+<h3 id="section-ValidationRules-MultiFieldUniquenessDefinition">Multi-field uniqueness definition<a class="hashlink" href="#section-ValidationRules-MultiFieldUniquenessDefinition">#</a></h3>
+<p>Similar to the <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-FieldAttributes">unique field attribute</a>, you can also define multi-field uniqueness contraints. These constraints can even span over several data definitions, if they are related via pointers.
+</p>
+<p>Multi-field uniqueness can be defined as follows
+</p>
+<div class="prettify">
+<pre>
+unique(age, email) : "the combination of age and email must be unique!"
+</pre></div>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>If the fields are in the same data definition, the uniqueness definition will translate into a database level multi-field key and uniqueness will be enforced there.
+Otherwise, Makumba will issue a query checking the uniqueness before new or edit operations.
+</p></div></div>
+</p>
+<h2 id="section-ValidationRules-ErrorMessage">Error message<a class="hashlink" href="#section-ValidationRules-ErrorMessage">#</a></h2>
+<p>The error message that will be displayed if the validation fails.
+</p>
+<p></p>
+<h2 id="section-ValidationRules-ImplicitValidationRules">Implicit validation rules<a class="hashlink" href="#section-ValidationRules-ImplicitValidationRules">#</a></h2>
+From the types defined in the <a class="wikipage" href="/page/DataDefinitions">Data Definition</a>, as well as from the <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-FieldAttributes">field attributes</a>, Makumba can automatically infer validation rules as follows:
+<p></p>
+<table border="1" class="wikitable"><tr class="odd"><th> field type </th><th> field attribute </th><th> validation rule </th><th> default message</th></tr>
+<tr><td> int </td><td> </td><td> check for an integer number </td><td> invalid integer</td></tr>
+<tr class="odd"><td> real </td><td> </td><td> check for a real number </td><td> invalid real</td></tr>
+<tr><td> boolean </td><td> </td><td> check for boolean value </td><td> invalid boolean</td></tr>
+<tr class="odd"><td> </td><td> unique </td><td> </td><td> This field needs to be unique. Try another value </td></tr>
+<tr><td> </td><td> not null </td><td> </td><td> A non-null value is required for this field </td></tr>
+<tr class="odd"><td> </td><td> not empty </td><td> </td><td> A non-empty value is required for this field </td></tr>
+</table><p>The default messages can be redefined in the MDD, as detailed in the <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-FieldAttributes">field attributes section</a> section of the MDD documentation.
+</p>
+<p></p>
+<span style="display:none;"><a class="wikipage" href="/page/CategoryDocumentation">Category Documentation</a></span>
+<p></p>
+<hr/>
+<p>There is an option to let you decide where the error message will appear: next to the field or on top of the page. It's the attribute "annotation" of the <a class="wikipage" href="/page/FormTag">mak:form</a>. According to the documentation, you need to use either "before" or "after" values to place the error before or after the input field, otherwise it'll appear on top of the page.
+</p>
+<p>--Orel, 05-Jan-2010 23:18
+</p>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on May 16 2010
+      
+    
+
+   <a class="feed" href="/rss_q5d25d2f0.jsp" title="RSS feed for page ValidationRules"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

@@ -1,0 +1,492 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Data Definitions
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/DataDefinitions?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="DataDefinitions" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_q84b5053b.jsp" rel="alternate" title="RSS wiki feed for page Makumba: DataDefinitions." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item" href="/page/Usage">usage</a>
+<a class="menu_item active" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<ul class="MenuTreeRoot">
+<a class="MenuTreeSelected" href="/page/DataDefinitions"><li class="MenuTreeLeafSelected">data definitions</li></a>
+<a href="/page/ValidationRules"><li class="MenuTreeLeaf">validation rules</li></a>
+<a href="/page/QueryLanguages"><li class="MenuTreeLeaf">query languages</li></a>
+<a href="/page/QueryFragments"><li class="MenuTreeLeaf">query fragments</li></a>
+<a href="/page/Taglib"><li class="MenuTree">JSP tag library</li></a>
+<a href="/page/RequestLifecycle"><li class="MenuTree">makumba request lifecycle</li></a>
+<a href="/api/org/makumba/package-summary.html"><li class="MenuTreeLeaf">API Documentation</li></a>
+<a href="/page/DeveloperDocumentation"><li class="MenuTree">developer documentation</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><div class="toc">
+<div class="collapsebox">
+<h4 id="section-TOC">Table of Contents</h4>
+<ul>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-TypesObjectsDatabases">Types, objects, databases</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Fields">Fields</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-DefaultFields">Default fields</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-PrimitiveFieldTypes">Primitive field types</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Overview">Overview</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Int">int</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Real">real</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Char">char</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Boolean">boolean</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Text">text</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Binary">binary</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Date">date</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-StructuralRelationalTypesAndCollections">Structural (relational) types and collections</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Overview-2">Overview</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Ptr">ptr</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Set">set</a></li>
+<li class="toclevel-3"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-File">file</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-MacroTypes">Macro types</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-FieldAttributes">Field attributes</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-ObjectTitle">Object title</a></li>
+<li class="toclevel-1"><a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-IncludeMechanism">Include mechanism</a></li>
+</ul>
+</div>
+</div>
+</p><h2 id="section-DataDefinitions-TypesObjectsDatabases">Types, objects, databases<a class="hashlink" href="#section-DataDefinitions-TypesObjectsDatabases">#</a></h2>
+<p>Data definitions describe <b>data types (or classes)</b>. They are placed in files contained in directory hierarchies, and the directory name is part of the type name (similar to Java packages). For example the <b>file company/Employee.mdd</b> describes the <b>type company.Employee</b>. Type names can contain letters, digits, underscores and dashes and cannot contain slashes and dots. Usually, the directories are used to separate organisations and projects.
+</p>
+<p>Current Java implementation finds the data definition files as follows:
+</p>
+<ul><li>the designated file extension is .mdd (Makumba Data Definition)
+</li><li>relative to CLASSPATH (e.g. classes/company/Employee.mdd)
+</li><li>in a directory called "<b>dataDefinitions/</b>" in the CLASSPATH (e.g. classes/dataDefinitions/company/Employee.mdd)
+</li></ul><p><b>Data objects (records)</b> are stored in <b>databases</b>.
+</p>
+<p><b>Data can be copied and/or replicated between different databases</b>, even between different DB engine types.
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>Replication is not yet implemented, but the design is prepared for it. Copying works.
+</p></div></div>
+</p>
+<h2 id="section-DataDefinitions-Fields">Fields<a class="hashlink" href="#section-DataDefinitions-Fields">#</a></h2>
+<p>Every data definition file contains <b>field definitions</b>, separated by newline.
+</p>
+<p>A field definition looks like:
+</p>
+<div class="prettify">
+<pre>
+fieldname= [attributes] fieldtype [parameters] [; description]
+</pre></div>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>Default values are supported internally, but not by the MDD parser
+</p></div></div>
+</p>
+<p></p>
+<p>As an implementation guideline, field names tend to stay approximately the same in:
+</p>
+<ul><li>HTTP requests
+</li><li>Record instances (java.util.Dictionary in the current Java API)
+</li><li>Database columns
+</li><li>etc
+</li></ul><p>The field description is used by the code generator at interface levels to present that field. It is typically shown at the left of, or somewhere near to, the input control (text box, radio button, chooser, etc) that allows for data input in that field. If a field description is not present, its field name stands for its description by default.
+</p>
+<p><b>Comment lines</b> can be inserted in the data definition files as follows:
+</p>
+<div class="prettify">
+<pre>
+# your comment... 
+</pre></div>
+<h2 id="section-DataDefinitions-DefaultFields">Default fields<a class="hashlink" href="#section-DataDefinitions-DefaultFields">#</a></h2>
+<p>Every datatype has some additional fields by default, as follows:
+</p>
+<ul><li><b>Primary Key field</b>. When using the Makumba database layer, it consists of two parts []DBSV with 8 bits | UID with 24 bits]:
+<ul><li>Database identifier (DBSV). It is unique (within the webapp) per database. All objects created thru that webapp and in that database get the same value. It is set by property dbsv in the database config file.
+</li><li>Object identifier (UID): unique id for the object in the given database.
+</li></ul></li></ul><p>      This combination ensures that no two objects of one type have the same primary key field. See .
+      The name of the primary key field is the same with the last part of the type name. If another field by that name is defined by the makumba user, this field will be renamed in the database.
+</p>
+<ul><li><b>Object creation time</b> Can be accessed as TS_create.
+</li><li><b>Last modification time</b>. Updates whenever the object is changed. The initicial value is TS_create. Can be accessed as TS_modify.
+</li></ul><h2 id="section-DataDefinitions-PrimitiveFieldTypes">Primitive field types<a class="hashlink" href="#section-DataDefinitions-PrimitiveFieldTypes">#</a></h2>
+<h4 id="section-DataDefinitions-Overview">Overview<a class="hashlink" href="#section-DataDefinitions-Overview">#</a></h4>
+<table border="1" class="wikitable"><tr class="odd"><th> Field definition type </th><th> Description </th><th> Default edit user interface </th><th> Relational database type (orientative) </th><th> Java type (orientative)</th></tr>
+<tr><td> int </td><td> a simple integer </td><td> text field </td><td> integer </td><td> java.lang.Integer</td></tr>
+<tr class="odd"><td> int{} </td><td> Integer enumeration, allowing for a set of predefined values </td><td> dropdown choice or radio button</td></tr>
+<tr><td> real </td><td> a real number </td><td> text field </td><td> double </td><td> java.lang.Double</td></tr>
+<tr class="odd"><td> date </td><td> a date </td><td> date </td><td> date and time </td><td> java.util.Date</td></tr>
+<tr><td> char<u></u> </td><td> a limited text (maximum length is 255) </td><td> text field </td><td> limited char </td><td> java.lang.String</td></tr>
+<tr class="odd"><td> text </td><td> an unlimited text </td><td> text area </td><td> unlimited characters </td><td> org.makumba.Text</td></tr>
+<tr><td> binary </td><td> a binary content, e.g. an image </td><td> binary area </td><td> unlimited byte </td><td> org.makumba.Text</td></tr>
+</table><h4 id="section-DataDefinitions-Int">int<a class="hashlink" href="#section-DataDefinitions-Int">#</a></h4>
+<p>A 32-bit integer. For example
+</p>
+<div class="prettify">
+<pre>
+shoeSize= int; Shoe size
+</pre></div>
+<p>If the int can have a limited number of values, it can be described as follows
+</p>
+<div class="prettify">
+<pre>
+gender = int{ "Male" = 10, "Female" = 20 }
+</pre></div>
+<p>This will help the presentation layer to present a suitable input control: <select name="gender">
+<option value="10">Male</option>
+<option value="20">Female</option>
+</select>
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>"deprecated" can be used in this way to denote a deprecated option:
+userType = int{"type1"=10, "type2"=10,"old"=0 deprecated}
+</p></div></div>
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>In the present implementation, this type is called "intEnum" internally.
+Negative numbers are supported (e.g. int { "aa"=5, "bb"=2, "cc"=-10}).
+</p></div></div>
+</p>
+<h4 id="section-DataDefinitions-Real">real<a class="hashlink" href="#section-DataDefinitions-Real">#</a></h4>
+<p>A real number with double precision with (2-2-52)·21023 as max value and 2-1074 as min value. For example:
+</p>
+<div class="prettify">
+<pre>
+turnover = real; turnover of the company
+</pre></div>
+<h4 id="section-DataDefinitions-Char">char<a class="hashlink" href="#section-DataDefinitions-Char">#</a></h4>
+<p>A char field contains a number of characters. Maximal width must be specified and is limited to 255. (Optionally a minimal number of characters (lesser than max) can be indicated). Both must be positive integers. For example:
+</p>
+<div class="prettify">
+<pre>
+fieldName= char[maxWidth];
+name= unique char[80];
+</pre></div>
+<p>unique is a <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-FieldAttributes">field attribute</a>, explained below.
+<div class="note"><div class="label">Note</div><div class="content"><p>Pay close attention to the character set (charset) for encoding the characters. In Java the charset is Unicode, but the JSP/HTML pages have their own encoding settings, as well as the database, etc.
+</p></div></div>
+</p>
+<h4 id="section-DataDefinitions-Boolean">boolean<a class="hashlink" href="#section-DataDefinitions-Boolean">#</a></h4>
+<p>A boolean, that can take as values true or false. For example:
+</p>
+<div class="prettify">
+<pre>
+currentlyEmployed= boolean; whether this employee is currently employed
+</pre></div>
+<h4 id="section-DataDefinitions-Text">text<a class="hashlink" href="#section-DataDefinitions-Text">#</a></h4>
+<p>An unlimited-length string of characters. This type is designed to accommodate large text content. It is implemented with LONGTEXT or its counterparts, depending on the underlying DB engine. The text data-type is ready for accepting data in UTF-8 encoding.
+ 
+</p>
+<div class="prettify">
+<pre>
+description=text ; Description of the project
+</pre></div>
+<h4 id="section-DataDefinitions-Binary">binary<a class="hashlink" href="#section-DataDefinitions-Binary">#</a></h4>
+<p>An unlimited-length field designed for binary content. In contrast to the text data type, binary will always be of 8 bit length. It is implemented with LONGTEXT or its counterparts, depending on the underlying DB engine. This type is meant for storing only raw binary data, for storing files along with meta-data like a file name, content type, etc., you should rather use the file data type.
+</p>
+<div class="prettify">
+<pre>
+signature= binary ; a binary digital signature 
+</pre></div>
+<h4 id="section-DataDefinitions-Date">date<a class="hashlink" href="#section-DataDefinitions-Date">#</a></h4>
+<p>A date and/or time.
+</p>
+<div class="prettify">
+<pre>
+birthdate = date; Date of birth
+arrivalTime = date; Arrival time
+</pre></div>
+<h2 id="section-DataDefinitions-StructuralRelationalTypesAndCollections">Structural (relational) types and collections<a class="hashlink" href="#section-DataDefinitions-StructuralRelationalTypesAndCollections">#</a></h2>
+<h4 id="section-DataDefinitions-Overview-2">Overview<a class="hashlink" href="#section-DataDefinitions-Overview-2">#</a></h4>
+<table border="1" class="wikitable">
+<tr>
+<th> Field definition type </th>
+<th> Description </th>
+<th> Default edit user interface </th>
+<th> Relational database type (orientative) </th>
+<th> Java type (orientative)</th>
+</tr>
+<tr>
+<td> ptr </td>
+<td> a pointer to another type record </td>
+<td> dropdown select of record titles. </td>
+<td> preferably a long (foreign index) </td>
+<td> org.makumba.Pointer</td>
+</tr>
+<tr>
+<td> set </td>
+<td> a set of records of another type (which could be re-used in another type) TODO: set chooser link </td>
+<td> multiple choice of record titles. </td>
+<td> table with ptrRel to the parent table and ptr to the foreign table </td>
+<td> java.util.Vector of org.makumba.Pointer</td>
+</tr>
+<tr>
+<td> fieldName=set<br/>
+fieldName-&gt; ... </td>
+<td> </td>
+<td> an internal set that relates to one specific record </td>
+<td> </td>
+<td> table with ptrRel to the parent table, and the rest of the fields
+</td>
+</tr>
+<tr>
+<td> set int{} </td>
+<td> a set of predefined values </td>
+<td> multiple choice from values </td>
+<td> table with ptrRel to the parent table, and an int field </td>
+<td> java.util.Vector of java.lang.Integer</td>
+</tr>
+<tr>
+<td>file</td>
+<td>a file including its meta-data (content type, size, ...)</td>
+<td>file upload</td>
+<td>preferably a long (foreign index)
+</td>
+</tr>
+</table>
+<h4 id="section-DataDefinitions-Ptr">ptr<a class="hashlink" href="#section-DataDefinitions-Ptr">#</a></h4>
+<p>Pointers define a reference to an object of a certain type. For example
+</p>
+<div class="prettify">
+<pre>
+manager = ptr company.Employee; The manager of the department
+</pre></div>
+<h4 id="section-DataDefinitions-Set">set<a class="hashlink" href="#section-DataDefinitions-Set">#</a></h4>
+<p>Sets define a number of references to multiple objects of a certain type. For example:
+</p>
+<div class="prettify">
+<pre>
+suppliers= set company.Company; Suppliers of this company
+</pre></div>
+<p>This type accomodates sets, bags and lists. The set and list constraints (sets have to contain only one element of a certain value and lists have to be ordered) have to be cared for by the programmer. Lists are easy to represent, just having an integer field, for the order.
+</p>
+<p>The type which the set is made of can be defined on the spot:
+</p>
+<div class="prettify">
+<pre>
+projects = set
+projects-&gt;project = ptr company.Project
+projects-&gt;timePercentage = int ;percentage assigned
+</pre></div>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>The main difference between sets of external types and internal sets is that when the host object (e.g. Employee.mdd that has the above field "address") is deleted from the database (DB), also all elements of the set (addresses) are deleted automatically, so there is no orphans (addresses) in the DB. Elements (addresses) of an internal set of some host object (Person X) also can't be used in a set of some other host object (Company Y).
+</p></div></div>
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>Internal sets are known internally as setComplex
+</p></div></div>
+</p>
+<p>The set can contain enumerated int values :
+</p>
+<div class="prettify">
+<pre>
+place= set int {"home"=1, "away"=0} ; Home or away 
+</pre></div>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>This is currently known internally as setintEnum
+</p></div></div>
+</p>
+<h4 id="section-DataDefinitions-File">file<a class="hashlink" href="#section-DataDefinitions-File">#</a></h4>
+<p>A file data-type is a kind-of record containing several fields needed when wanting to store files. These fields are:
+</p>
+<ul><li>content (binary): the actual binary data of the file.
+</li><li>name (char): the file name.
+</li><li>originalName (char): the original file name.
+</li><li>contentType (char): the MIME content-type of the file.
+</li><li>contentLength (int): the content length in byte.
+</li><li>imageWidth (int): (only for images) the image width.
+</li><li>imageHeight (int): (only for images) the image height.
+</li></ul><p><div class="note"><div class="label">Note</div><div class="content"><p>logo = file ; Picture attachment
+</p></div></div> 
+  
+All fields are automatically set by Makumba, all needed to do is to make a <a class="wikipage" href="/page/InputTag">&lt;mak:input&gt;</a> on the field name.
+</p>
+<p>This type should be used in favour of the <a class="wikipage" href="/page/DataDefinitions#section-DataDefinitions-Binary">binary data type</a> when you don't want to store only the raw binary data, but also meta-data as in the fields above.
+</p>
+<h2 id="section-DataDefinitions-MacroTypes">Macro types<a class="hashlink" href="#section-DataDefinitions-MacroTypes">#</a></h2>
+<p>A name can be defined for a more complex type and it can be reused in the file. This can be done with a !type directive
+</p>
+<div class="prettify">
+<pre>
+!type.rank = int{"Neutral"=0, "Very good"=5, "Very bad"=-5}
+
+happyInLife = rank
+</pre></div>
+<h2 id="section-DataDefinitions-FieldAttributes">Field attributes<a class="hashlink" href="#section-DataDefinitions-FieldAttributes">#</a></h2>
+<ul><li>fixed fields can only set during the record's insertion in the database. The subsequent updates will not update the field
+</li><li>not null fields will produce a exception if an attempt is made to insert/update without them being initialized
+</li><li>not empty fields will produce a exception if an attempt is made to insert/update an empty string value
+</li><li>unique fields have a unique value in the respective object, for the respective type
+</li></ul><p>These attributes are used by makumba in order to perform implicit validation at form submission time, i.e., the fields of submitted forms will automatically be checked for coherence against the defined field attributes.
+</p>
+<p>It is possible to customise the error message that will be displayed in case an implicit field validation fails:
+</p>
+<div class="prettify">
+<pre>
+login.unique = "This login is already taken, please choose another one"
+surname.notEmpty = "Please fill in your surname"
+age.notNull = "Please fill in your age"
+age.NaN = "Please enter a valid number"
+age.notInt = "Please enter a valid integer"
+amount.notReal = "Please enter a valid real"
+</pre></div>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>The NaN (Not A Number), notInt (not an integer) and notReal (not a real) error message is part of implicit, type-dependent validation and is performed by makumba automatically, without the need of adding a field attribute.
+</p></div></div>
+</p>
+<h2 id="section-DataDefinitions-ObjectTitle">Object title<a class="hashlink" href="#section-DataDefinitions-ObjectTitle">#</a></h2>
+<div class="note"><div class="label">Note</div><div class="content"><p>The object title is used for set and ptr choosers
+</p></div></div>
+<p>One of the fields is always the object title, and is normally presented differently from other fields in user interface. For example, when you have a field that is a set and you use a mak:input on that field, Makumba will automatically create a list with all the items in the set and it will use the object title to know what field to display. The default is the field called "name" if that exists, otherwise it is the first non-pointer field in the record description. If another field needs to be title, it can be specified like
+</p>
+<div class="prettify">
+<pre>
+!title=gender
+</pre></div>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>for the on-the spot types in the current implementation, the following notation works:
+address-&gt;!title= street
+</p></div></div>
+</p>
+<h2 id="section-DataDefinitions-IncludeMechanism">Include mechanism<a class="hashlink" href="#section-DataDefinitions-IncludeMechanism">#</a></h2>
+<p>A record description can include text from one or more files. This is declared as
+</p>
+<div class="prettify">
+<pre>
+!include=name_of_included_type
+</pre></div>
+<p>The included file has the idd extension and is found in a similar way like the data definitions.
+</p>
+<p>The included file is inserted instead of the !include line. There can be more include lines in a record description file. If a field is defined that exists also in the included metadata, the defined field takes precedence.
+</p>
+<div class="prettify">
+<pre>
+fieldname =
+</pre></div>
+<p>If it means that it does not actually exist. This can be used to cancel an included field.
+</p>
+<p><div class="note"><div class="label">Note</div><div class="content"><p>Include might be replaced by more advanced concepts such as inheritance and type inclusion (rather than reference in foreign table)
+</p></div></div>
+</p>
+<p></p>
+<span style="display:none;"><a class="wikipage" href="/page/CategoryDocumentation">Category Documentation</a></span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on June 27 2010
+      
+    
+
+   <a class="feed" href="/rss_q84b5053b.jsp" title="RSS feed for page DataDefinitions"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>

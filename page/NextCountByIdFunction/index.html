@@ -1,0 +1,226 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html id="top" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>
+    Makumba: Next Count By Id Function
+  </title>
+<link href="/templates/makumba/jspwiki.css" media="screen, projection, print" rel="stylesheet" type="text/css"/>
+<link href="/templates/makumba/jspwiki_print.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- INCLUDERESOURCES (stylesheet) -->
+<!-- INCLUDERESOURCES (inlinecss) -->
+<noscript>
+<style type="text/css">
+#hiddenmorepopup { display:block; }
+</style>
+</noscript>
+<script src="/scripts/mootools.js" type="text/javascript"></script>
+<script src="/scripts/prettify.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-common.js" type="text/javascript"></script>
+<script src="/scripts/jspwiki-commonstyles.js" type="text/javascript"></script>
+<!-- INCLUDERESOURCES (script) -->
+<meta content="view" name="wikiContext"/>
+<meta content="/" name="wikiBaseUrl"/>
+<meta content="/page/%23%24%25" name="wikiPageUrl"/>
+<meta content="/page/NextCountByIdFunction?do=Edit" name="wikiEditUrl"/>
+<meta content="/JSON-RPC" name="wikiJsonUrl"/>
+<meta content="NextCountByIdFunction" name="wikiPageName"/>
+<meta content="127.0.0.1" name="wikiUserName"/>
+<meta content="/templates/makumba/" name="wikiTemplateUrl"/>
+<meta content="Makumba" name="wikiApplicationName"/>
+<script type="text/javascript">//<![CDATA[
+/* Localized javascript strings: LocalizedStrings[] */
+var LocalizedStrings = {
+"javascript.sbox.clone.suffix":"-New",
+"javascript.slimbox.remoteRequest":"Remote Request {0} of {1}",
+"javascript.filter.all":"( All )",
+"javascript.group.validName":"Please provide a valid name for the new Group",
+"javascript.slimbox.next":"Next&raquo;",
+"javascript.slimbox.previous":"&laquo;Previous",
+"javascript.favs.show":"Click to show Favorites",
+"javascript.slimbox.close":"Close &#215;",
+"javascript.prefs.areyousure":"Without clicking the Save User Preferences button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.findandreplace.nomatch":"No match found!",
+"javascript.tip.default.title":"More...",
+"javascript.collapse":"Click to collapse",
+"javascript.slimbox.error":"<h2>Error</h2>There was a problem with your request.<br />Please try again",
+"javascript.sort.ascending":"Ascending order. Click to reverse sort order",
+"javascript.sectionediting.label":"Section Overview",
+"javascript.edit.areyousure":"Without clicking the Save button, your changes will be lost. Are you sure you want to exit this page?",
+"javascript.edit.toolbar.makeSelection":"Please make first a selection.",
+"javascript.category.title":"Click to show category [{0}] ...",
+"javascript.slimbox.info":"Image {0} of {1}",
+"javascript.slimbox.directLink":"Direct Link to the target",
+"javascript.quick.edit.title":"Edit section {0}...",
+"javascript.favs.hide":"Click to hide Favorites",
+"javascript.sort.click":"Click to sort",
+"javascript.edit.startOfPage":"( Start of page )",
+"javascript.quick.edit":"[Edit]",
+"javascript.edit.resize":"Drag to resize the text area",
+"javascript.edit.allsections":"( All )",
+"javascript.sort.descending":"Descending order. Click to reverse sort order",
+"javascript.slimbox.close.title":"Close [Esc]",
+"javascript.expand":"Click to expand"
+};
+
+
+/* INCLUDERESOURCES (jsfunction) */
+
+//]]></script>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<link href="/page/FindPage" rel="search" title="Search Makumba"/>
+<link href="/page/TextFormattingRules" rel="help" title="Help"/>
+<link href="/page/Main" rel="start" title="Front page"/>
+<link href="/templates/makumba/jspwiki_print.css" rel="alternate stylesheet" title="Print friendly" type="text/css"/>
+<link href="/templates/makumba/jspwiki.css" rel="alternate stylesheet" title="Standard" type="text/css"/>
+<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<link href="/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="/rss.rdf" rel="alternate" title="RSS wiki feed for the entire site." type="application/rss+xml"/>
+<link href="/rss_q2a0f0ce8.jsp" rel="alternate" title="RSS wiki feed for page Makumba: NextCountByIdFunction." type="application/rss+xml"/>
+</head>
+<body class="view">
+<div class="fav-left" id="wikibody">
+<div id="site">
+<div id="header">
+<div id="persistent">
+
+<form accept-charset="UTF-8" action="/Search.jsp">
+<input accesskey="f" id="query" name="query" onblur="if( this.value == '' ) { this.value = this.defaultValue }; return true; " onfocus="if( this.value == this.defaultValue ) { this.value = ''}; return true; " type="text" value="search"/>
+</form>
+</div>
+<div id="top_nav">
+<a class="menu_item" href="/page/Main">home</a>
+<a class="menu_item" href="/page/QuickStart">quick start</a>
+<a class="menu_item" href="/page/Configuration">configuration</a>
+<a class="menu_item" href="/page/Usage">usage</a>
+<a class="menu_item active" href="/page/Documentation">documentation</a>
+<a class="menu_item" href="/page/Showcase">showcase</a>
+<a class="menu_item" href="/page/Download">download</a>
+</div>
+</div>
+<div id="sidemenu">
+<h1><a class="wikipage" href="/page/Main">home</a></h1>
+<h1><a class="wikipage" href="/page/QuickStart">quick start</a></h1>
+<h1><a class="wikipage" href="/page/Configuration">configuration</a></h1>
+<h1><a class="wikipage" href="/page/Usage">usage</a></h1>
+<h1><a class="wikipage" href="/page/Documentation">documentation</a></h1>
+<ul class="MenuTreeRoot">
+<a href="/page/DataDefinitions"><li class="MenuTreeLeaf">data definitions</li></a>
+<a href="/page/ValidationRules"><li class="MenuTreeLeaf">validation rules</li></a>
+<a href="/page/QueryLanguages"><li class="MenuTreeLeaf">query languages</li></a>
+<a href="/page/QueryFragments"><li class="MenuTreeLeaf">query fragments</li></a>
+<a href="/page/Taglib"><li class="MenuTreeExpanded">JSP tag library</li></a>
+<ul class="MenuTree">
+<a href="/page/ActionTag"><li class="MenuTreeLeaf">mak:action</li></a>
+<a href="/page/AddFormTag"><li class="MenuTreeLeaf">mak:addForm</li></a>
+<a href="/page/AttributeTag"><li class="MenuTreeLeaf">mak:attribute</li></a>
+<a href="/page/CriterionTag"><li class="MenuTreeLeaf">mak:criterion</li></a>
+<a href="/page/DeleteTag"><li class="MenuTreeLeaf">mak:delete</li></a>
+<a href="/page/DeleteLinkTag"><li class="MenuTreeLeaf">mak:deleteLink</li></a>
+<a href="/page/EditFormTag"><li class="MenuTreeLeaf">mak:editForm</li></a>
+<a href="/page/FormTag"><li class="MenuTreeLeaf">mak:form</li></a>
+<a href="/page/IfTag"><li class="MenuTreeLeaf">mak:if</li></a>
+<a href="/page/InfoTag"><li class="MenuTreeLeaf">mak:info</li></a>
+<a href="/page/InputTag"><li class="MenuTreeLeaf">mak:input</li></a>
+<a href="/page/ListTag"><li class="MenuTreeLeaf">mak:list</li></a>
+<a href="/page/LoginTag"><li class="MenuTreeLeaf">mak:login</li></a>
+<a href="/page/LogoutTag"><li class="MenuTreeLeaf">mak:logout</li></a>
+<a href="/page/MatchModeTag"><li class="MenuTreeLeaf">mak:matchMode</li></a>
+<a href="/page/NewFormTag"><li class="MenuTreeLeaf">mak:newForm</li></a>
+<a href="/page/ObjectTag"><li class="MenuTreeLeaf">mak:object</li></a>
+<a href="/page/OptionTag"><li class="MenuTreeLeaf">mak:option</li></a>
+<a href="/page/PaginationTag"><li class="MenuTreeLeaf">mak:pagination</li></a>
+<a href="/page/ResponseTag"><li class="MenuTreeLeaf">mak:response</li></a>
+<a href="/page/ResultListTag"><li class="MenuTreeLeaf">mak:resultList</li></a>
+<a href="/page/SearchFieldTag"><li class="MenuTreeLeaf">mak:searchField</li></a>
+<a href="/page/SearchFormTag"><li class="MenuTreeLeaf">mak:searchForm</li></a>
+<a href="/page/SectionTag"><li class="MenuTreeLeaf">mak:section</li></a>
+<a href="/page/SubmitTag"><li class="MenuTreeLeaf">mak:submit</li></a>
+<a href="/page/ValueTag"><li class="MenuTreeLeaf">mak:value</li></a>
+<a href="/page/VersionTag"><li class="MenuTreeLeaf">mak:version</li></a>
+<a href="/page/CountFunction"><li class="MenuTreeLeaf">mak:count()</li></a>
+<a href="/page/HasValueChangedFunction"><li class="MenuTreeLeaf">mak:hasValueChanged()</li></a>
+<a href="/page/LastCountFunction"><li class="MenuTreeLeaf">mak:lastCount()</li></a>
+<a href="/page/LastCountByIdFunction"><li class="MenuTreeLeaf">mak:lastCountById()</li></a>
+<a href="/page/MaxCountFunction"><li class="MenuTreeLeaf">mak:maxCount()</li></a>
+<a href="/page/MaxResultsFunction"><li class="MenuTreeLeaf">mak:maxResults()</li></a>
+<a href="/page/NextCountFunction"><li class="MenuTreeLeaf">mak:nextCount()</li></a>
+<a class="MenuTreeSelected" href="/page/NextCountByIdFunction"><li class="MenuTreeLeafSelected">mak:nextCountById()</li></a>
+<a href="/page/ValueFunction"><li class="MenuTreeLeaf">mak:value()</li></a>
+<a href="/page/WillValueChangeFunction"><li class="MenuTreeLeaf">mak:willValueChange()</li></a>
+</ul>
+<a href="/page/RequestLifecycle"><li class="MenuTree">makumba request lifecycle</li></a>
+<a href="/api/org/makumba/package-summary.html"><li class="MenuTreeLeaf">API Documentation</li></a>
+<a href="/page/DeveloperDocumentation"><li class="MenuTree">developer documentation</li></a>
+</ul>
+<h1><a class="wikipage" href="/page/Showcases">showcase</a></h1>
+<h1><a class="wikipage" href="/page/Download">download</a></h1>
+</div>
+<div class="sideMenu" id="content">
+<div id="page">
+<p><span style="display:none"> makumba hackers: this page is generated, don't edit it! Instead edit the text in the included pages. </span>
+</p><h2 id="section-NextCountByIdFunction-TaglibDocumentationForELFunctionMakNextCountById">Taglib documentation for EL function mak:nextCountById<a class="hashlink" href="#section-NextCountByIdFunction-TaglibDocumentationForELFunctionMakNextCountById">#</a></h2>
+<h3 id="section-NextCountByIdFunction-Description">Description<a class="hashlink" href="#section-NextCountByIdFunction-Description">#</a></h3>
+<p>There is no page called 'NextCountFunctionDescription'.  Would you like to <img alt="" class="outlink" src="/images/out.png"/>
+</p>
+<h3 id="section-NextCountByIdFunction-Attributes">Attributes<a class="hashlink" href="#section-NextCountByIdFunction-Attributes">#</a></h3>
+This tag has no attributes
+<h3 id="section-NextCountByIdFunction-SeeAlso">See also<a class="hashlink" href="#section-NextCountByIdFunction-SeeAlso">#</a></h3>
+<p><a class="wikipage" href="/page/CountFunction">mak:count</a>, <a class="wikipage" href="/page/MaxCountFunction">mak:maxCount</a>, <a class="wikipage" href="/page/LastCountFunction">mak:lastCount</a>, <a class="wikipage" href="/page/MaxResultsFunction">mak:maxResults</a>
+<h3 id="section-NextCountByIdFunction-Examples">Examples<a class="hashlink" href="#section-NextCountByIdFunction-Examples">#</a></h3>
+</p>
+<p><div style="display: inline;"><div class="prettify">
+<pre>
+&lt;mak:list ...&gt;
+   &lt;c:if test="${mak:count()==1}"&gt;These are the list elements: &lt;/c:if&gt;
+   &lt;tr bgcolor="${mak:count()%2==1?"white":"grey"}"&gt;
+        &lt;td&gt;this shows in alternate colors&lt;/td&gt;
+        ...
+   &lt;/tr&gt;
+   &lt;c:if test="${mak:count()!=mak:maxCount()}"&gt;
+       a separator where we can have any &lt;b&gt;tag&lt;/b&gt; 
+       we don't want separators to be shown after the last element 
+   &lt;/c:if&gt;
+&lt;/mak:list&gt;
+&lt;c:if test="${mak:lastCount()==0}"&gt;These are no elements &lt;/c:if&gt;
+</pre></div>
+</div><img alt="" class="outlink" src="/images/out.png"/>
+</p>
+<p></p>
+<span style="display:none;"> <a class="wikipage" href="/page/CategoryDocumentation">Category Documentation</a></span>
+<div class="pageactions" id="actionsBottom">
+<hr/>
+
+<hr/>
+<a class="action quick2top" href="#top" title="Go to top">«</a>
+
+    
+    
+     
+      This page was last updated on August 1 2010
+      
+    
+
+   <a class="feed" href="/rss_q2a0f0ce8.jsp" title="RSS feed for page NextCountByIdFunction"> </a>
+</div>
+</div>
+<span class="rssfeed">
+<a class="feed" href="/rss.rdf"> </a>
+</span>
+</div>
+</div>
+<div class="clearbox"></div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-13258723-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
